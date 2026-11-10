@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Doppler flyover geolocation: preset viewer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Read-only viewer of precomputed Doppler-curve geolocation results: spectrograms, fitted curves, heat maps and ranked matches.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:,">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js" crossorigin=""></script>
+</head><body>
+<header>
+  <b>Doppler flyover geolocation</b> <span class="badge">read-only preset viewer</span>
+  <label>Preset <select id="projSel"></select></label>
+  <label>Search result <select id="resSel"></select></label>
+  <button id="aboutBtn">About / method</button>
+  <span id="projInfo" class="muted small"></span>
+</header>
+<div id="statusBanner" hidden></div>
+<section id="about" class="panel" hidden>
+  <button id="aboutClose" class="right">Close</button>
+  <h3>About this viewer</h3>
+  <p>This page rebuilds the method from colsto's video <a href="https://youtu.be/UytYrhYLOKI" target="_blank" rel="noopener">"I discovered a sound that leaks your exact location"</a>:
+  the engine tone of a propeller aircraft flying past a microphone traces a <b>Doppler curve</b> in the spectrogram, and the shape and timing of that curve
+  can be matched against a day of flight-tracking (ADS-B) data to find where the recording was made, even when no plane is visible.</p>
+  <ol>
+    <li><b>Fit each curve.</b> Four parameters: base pitch f0, speed v, closest distance d and the time t0 at which the closest-approach sound arrives (with propagation delay, the "retarded" model).
+      Curves are fitted with the sliders, by tracing the ridge, or found automatically (whitening, harmonic stacking, a template bank, Viterbi ridge tracing, least-squares fit).</li>
+    <li><b>Gaps, not clock times.</b> With two or more curves, the time between their t0s (920 s in the Oyster Bay example) is derived from the fits; every pair is checked, with a tolerance
+      of offset_tol_s + k·√(σ<sub>j</sub>²+σ<sub>k</sub>²).</li>
+    <li><b>Candidate spots.</b> Flights are filtered to the fitted speed range, jets are dropped (ICAO DOC 8643 engine type), and a 200 m grid is laid inside each event's distance band.
+      Each spot gets the sound-delayed closest-approach time of each flight, using terrain heights.</li>
+    <li><b>Offset filter.</b> A spot survives only if it would hear one flight per event at the observed gaps (batch nearest-neighbour search).</li>
+    <li><b>Silence filter.</b> Spots where another aircraft would have been audible between the events are dropped (two passes).</li>
+    <li><b>Crude rank, densify to 100 m, locked spectrogram scoring.</b> For each spot the predicted curve of each flight (emission-time model on the real track) is laid on the spectrogram;
+      event 1 sweeps dt and f0, the others sweep f0 only with their times locked by geometry. The score is the mean whitened brightness under the curves.</li>
+    <li><b>Grouping.</b> The best spot per combination of flights is kept and ranked. Heat maps show the score on a 25 m grid around a match.</li>
+    <li><b>Single-flight mode</b> (one curve, known recording time): every flight segment at that time is scored by −mean |f<sub>model</sub> − f<sub>traced</sub>| after a time and f0 sweep; best spot per flight.</li>
+  </ol>
+  <p><b>This site is read-only.</b> Everything here was precomputed by the full app and exported to static files. Uploading your own video/audio, auto-detecting or re-fitting curves,
+  and running new searches need the full app (Python backend with about 30 GB of flight data), which is not hosted here. The f0/v/d/t0 sliders below only draw a curve in your browser.</p>
+  <p class="small muted">Data: flight tracks from <a href="https://adsb.lol" target="_blank" rel="noopener">adsb.lol</a> (ODbL), terrain from AWS Terrarium tiles, maps © OpenStreetMap contributors, imagery © Esri.
+  Livermore recordings: published flyover dataset with known recorder position (derived from the tracks to ~2 m). Altenthann: freesound #847111 (audio only). FeederWatch: Cornell Lab live cam, recorded with live adsb.lol polling.
+  <span id="genInfo"></span></p>
+</section>
+<main>
+<section id="left">
+  <div class="panel">
+    <div class="row">
+      <button id="zoomAll">Full view</button><button id="zoomDef">Default view</button>
+      <button id="zoomIn">Zoom +</button><button id="zoomOut">Zoom −</button>
+      <label><input type="checkbox" id="showLines" checked> traced ridges</label>
+      <label><input type="checkbox" id="showFits" checked> fitted curves</label>
+      <label><input type="checkbox" id="showAll"> all events</label>
+      <span class="muted small">wheel = zoom time · shift+wheel = zoom freq · drag = pan · click = play from there</span>
+    </div>
+    <div id="specWrap"><canvas id="specImg"></canvas><canvas id="specOv"></canvas><div id="hover" class="muted"></div></div>
+    <div class="row"><label>Audio <select id="clipSel"></select></label><audio id="player" controls preload="none"></audio></div>
+    <p class="muted small">Whitened spectrogram (z-score per frequency bin, 1 s Hann window, 0.25 s hop). Dashed = fitted curve per event, dots = traced ridge, green = predicted curves of the selected match.</p>
+  </div>
+  <div class="panel">
+    <h3>Events <span class="muted small">(the curves used by the selected search are highlighted)</span></h3>
+    <div class="tblwrap"><table id="evTable" class="tbl"></table></div>
+    <h4>Pairwise gaps from the fitted t0s</h4>
+    <table id="gapTable" class="tbl"></table>
+    <p class="muted small">gap = t0<sub>k</sub> − t0<sub>j</sub> of the fitted curves; tolerance = offset_tol_s + tol_sigma_k·√(σ<sub>j</sub>²+σ<sub>k</sub>²), using the search's parameters. Nothing is hard-coded.</p>
+  </div>
+  <div class="panel">
+    <h3>Curve playground <span class="muted small">(local only; nothing is saved)</span></h3>
+    <div class="sliders">
+      <label>f0 (Hz) <input id="s_f0" type="range" min="20" max="1500" step="0.05"><input id="n_f0" type="number" step="0.05"></label>
+      <label>v (m/s) <input id="s_v" type="range" min="5" max="320" step="0.1"><input id="n_v" type="number" step="0.1"></label>
+      <label>d (m) <input id="s_d" type="range" min="30" max="20000" step="5"><input id="n_d" type="number" step="5"></label>
+      <label>t0 (s) <input id="s_t0" type="range" min="0" max="100" step="0.05"><input id="n_t0" type="number" step="0.05"></label>
+    </div>
+    <div class="row">
+      <label><input type="checkbox" id="showSlider"> draw on spectrogram</label>
+      <label><input type="radio" name="pmode" value="delayed" checked> Delayed</label>
+      <label><input type="radio" name="pmode" value="position"> Position (no delay)</label>
+      <button id="fromView">Centre t0 in view</button>
+      <span id="readouts" class="mono small"></span>
+    </div>
+  </div>
+</section>
+<section id="right">
+  <div class="panel">
+    <h3>Search result</h3>
+    <div id="summary" class="small"></div>
+    <details class="small"><summary>parameters and log</summary><pre id="jobLog"></pre></details>
+  </div>
+  <div class="panel">
+    <div id="map"></div>
+    <div class="row">
+      <label>heat layer <select id="heatLayer"></select></label>
+      <label><input type="checkbox" id="showPts" checked> candidate points</label>
+      <span id="heatMsg" class="muted small"></span>
+    </div>
+    <div class="row small"><span id="selLinks"></span></div>
+  </div>
+  <div class="panel">
+    <h3>Top matches <span class="muted small">(best point per flight combo · click a row to view · tick to compare)</span></h3>
+    <div class="tblwrap"><table id="resTable" class="tbl"></table></div>
+    <canvas id="scatter" width="560" height="240"></canvas>
+  </div>
+  <div class="panel">
+    <h3>Side-by-side comparison <span class="muted small">(up to 3 matches)</span></h3>
+    <div id="compare"></div>
+  </div>
+</section>
+</main>
+<footer class="muted small">Static export of the full Doppler geolocation app · uploads and new searches need the full app · <a href="#" id="aboutLink">about the method</a></footer>
+<script src="app.js"></script>
+</body></html>

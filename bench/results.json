@@ -1,0 +1,3673 @@
+{
+ "summary": {
+  "candidates": 22,
+  "downloaded": 22,
+  "usable_audio": 11,
+  "events_found": 10,
+  "two_plus_events": 9,
+  "stage_counts": {
+   "no_live_audio": 11,
+   "ran": 10,
+   "no_events_detected": 1
+  },
+  "blind": {
+   "n": 10,
+   "top1": 0,
+   "top3": 0,
+   "top10": 0,
+   "median_top1_km": 1548.17,
+   "worst_top1_km": 3305.6,
+   "failures": {
+    "too_slow_timeout": 3,
+    "wrong_top_match": 4,
+    "not_runnable_blind_single": 1,
+    "not_run_time_budget": 2
+   },
+   "median_elapsed_s": 84
+  },
+  "prior": {
+   "n": 10,
+   "top1": 0,
+   "top3": 0,
+   "top10": 0,
+   "median_top1_km": 1354.88,
+   "worst_top1_km": 3009.1,
+   "failures": {
+    "wrong_top_match": 6,
+    "no_candidate_survived_filters": 4
+   },
+   "median_elapsed_s": 8
+  },
+  "prior_single": {
+   "n": 9,
+   "top1": 0,
+   "top3": 0,
+   "top10": 0,
+   "median_top1_km": 1202.88,
+   "worst_top1_km": 1786.5,
+   "failures": {
+    "wrong_top_match": 9
+   },
+   "median_elapsed_s": 48
+  }
+ },
+ "clips": [
+  {
+   "id": "ocmd_plim_20260727",
+   "place": "Plim Plaza Hotel, Boardwalk at 2nd St, Ocean City MD",
+   "tier": "precise",
+   "radius_m": 100,
+   "day": "2026-07-27",
+   "region": "CONUS",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "no_live_audio",
+   "audio_note": "digital silence (audio track all zeros)",
+   "screen": {
+    "duration_s": 3609.991,
+    "rms_dbfs_median": -240.00001525878906,
+    "rms_dbfs_p10": -240.00001525878906,
+    "rms_dbfs_p90": -240.00001525878906,
+    "peak_dbfs": -240.00001525878906,
+    "frac_silent_lt_m70": 1.0,
+    "frac_silent_lt_m60": 1.0,
+    "flatness_median": 1.000000000000008,
+    "lowband_share_median": 0.03735632183908351
+   },
+   "n_events": 0,
+   "n_primary": 0,
+   "selected_events": [],
+   "runs": {}
+  },
+  {
+   "id": "ocmd_dolles_20260703",
+   "place": "Dolle's (original), Boardwalk at Wicomico St, Ocean City MD",
+   "tier": "precise",
+   "radius_m": 150,
+   "day": "2026-07-03",
+   "region": "CONUS",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "no_live_audio",
+   "audio_note": "digital silence (audio track all zeros)",
+   "screen": {
+    "duration_s": 3609.991,
+    "rms_dbfs_median": -240.00001525878906,
+    "rms_dbfs_p10": -240.00001525878906,
+    "rms_dbfs_p90": -240.00001525878906,
+    "peak_dbfs": -240.00001525878906,
+    "frac_silent_lt_m70": 1.0,
+    "frac_silent_lt_m60": 1.0,
+    "flatness_median": 1.000000000000008,
+    "lowband_share_median": 0.03735632183908351
+   },
+   "n_events": 0,
+   "n_primary": 0,
+   "selected_events": [],
+   "runs": {}
+  },
+  {
+   "id": "ocmd_9thst_20260806",
+   "place": "9th St & Boardwalk (Thrasher's), Ocean City MD",
+   "tier": "precise",
+   "radius_m": 150,
+   "day": "2026-08-06",
+   "region": "CONUS",
+   "prior_s": 147,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "no_live_audio",
+   "audio_note": "digital silence (audio track all zeros)",
+   "screen": {
+    "duration_s": 3600.0,
+    "rms_dbfs_median": -240.00001525878906,
+    "rms_dbfs_p10": -240.00001525878906,
+    "rms_dbfs_p90": -240.00001525878906,
+    "peak_dbfs": -240.00001525878906,
+    "frac_silent_lt_m70": 1.0,
+    "frac_silent_lt_m60": 1.0,
+    "flatness_median": 1.000000000000008,
+    "lowband_share_median": 0.03735632183908351
+   },
+   "n_events": 0,
+   "n_primary": 0,
+   "selected_events": [],
+   "runs": {}
+  },
+  {
+   "id": "mickriley_20260930",
+   "place": "Mick Riley Golf Course, Murray UT",
+   "tier": "medium",
+   "radius_m": 500,
+   "day": "2026-09-30",
+   "region": "CONUS",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "live_audio",
+   "audio_note": "live golf-course audio (visual screen ok)",
+   "screen": {
+    "duration_s": 3600.0,
+    "rms_dbfs_median": -50.537254333496094,
+    "rms_dbfs_p10": -53.611473083496094,
+    "rms_dbfs_p90": -42.71836853027344,
+    "peak_dbfs": -11.91697883605957,
+    "frac_silent_lt_m70": 0.0,
+    "frac_silent_lt_m60": 0.0,
+    "flatness_median": 0.013813022550664685,
+    "lowband_share_median": 0.8333279691323733
+   },
+   "n_events": 38,
+   "n_primary": 18,
+   "selected_events": [
+    {
+     "id": 1,
+     "t0": 2365.6094538761918,
+     "f0": 119.29827881887499,
+     "v": 75.85223625999663,
+     "d": 2280.730615480599,
+     "conf": 15.035299301147461,
+     "rms": 0.5568912961083635,
+     "primary": true,
+     "n_line": 91
+    },
+    {
+     "id": 5,
+     "t0": 3469.1253878291077,
+     "f0": 612.0965925370565,
+     "v": 10.000000002659526,
+     "d": 73.01264050107557,
+     "conf": 10.43542766571045,
+     "rms": 5.837602761763772,
+     "primary": true,
+     "n_line": 49
+    }
+   ],
+   "runs": {
+    "blind": {
+     "status": "timeout",
+     "reason": null,
+     "error": null,
+     "search_mode": null,
+     "elapsed_s": 1800,
+     "sc": null,
+     "pipeline": null,
+     "top5": null,
+     "job_id": null,
+     "events": null,
+     "failure": "too_slow_timeout"
+    },
+    "prior": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 34.80167317390442,
+     "sc": {
+      "n_rows": 1,
+      "hit_radius_m": 1000.0,
+      "truth_rank": null,
+      "top1_dist_m": 1238.0992690961662,
+      "top1_lat": 40.661606180380886,
+      "top1_lon": -111.88800672517519,
+      "min_dist_top10_m": 1238.0992690961662,
+      "s1": 1.1346094981477899,
+      "s2": null,
+      "margin": null,
+      "truth_score": null,
+      "top1_flights": [
+       "N8186M",
+       "N731HC"
+      ],
+      "top1_types": [
+       "PA34",
+       "A109"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": 119168,
+      "n_offset": 6,
+      "n_silence1": 6,
+      "n_silence2": 1,
+      "n_dense": 4,
+      "n": null
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 40.661606180380886,
+       "lon": -111.88800672517519,
+       "score": 1.1346094981477899,
+       "dist_m": 1238.0992690961662,
+       "flights": [
+        [
+         "N8186M",
+         "PA34"
+        ],
+        [
+         "N731HC",
+         "A109"
+        ]
+       ]
+      }
+     ],
+     "job_id": "bmickpr54713",
+     "events": [
+      {
+       "id": 1,
+       "t0": 2365.6094538761918,
+       "f0": 119.29827881887499,
+       "v": 75.85223625999663,
+       "d": 2280.730615480599,
+       "conf": 15.035299301147461
+      },
+      {
+       "id": 5,
+       "t0": 3469.1253878291077,
+       "f0": 612.0965925370565,
+       "v": 10.000000002659526,
+       "d": 73.01264050107557,
+       "conf": 10.43542766571045
+      }
+     ],
+     "failure": "wrong_top_match"
+    },
+    "prior_single": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "single",
+     "elapsed_s": 73.22784733772278,
+     "sc": {
+      "n_rows": 100,
+      "hit_radius_m": 1000.0,
+      "truth_rank": 37,
+      "top1_dist_m": 1187338.365370971,
+      "top1_lat": 44.67121810995329,
+      "top1_lon": -98.39131796357091,
+      "min_dist_top10_m": 909625.8814102013,
+      "s1": -0.38529970859932444,
+      "s2": -0.3860858874496977,
+      "margin": 0.002040434583330544,
+      "truth_score": -0.39655963291971813,
+      "top1_flights": [
+       "N15074"
+      ],
+      "top1_types": [
+       "AT3T"
+      ],
+      "truth_flights": [
+       "N8186M"
+      ]
+     },
+     "pipeline": {
+      "n_candidates": null,
+      "n_offset": null,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": 160244
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 44.67121810995329,
+       "lon": -98.39131796357091,
+       "score": -0.38529970859932444,
+       "dist_m": 1187338.365370971,
+       "flights": [
+        [
+         "N15074",
+         "AT3T"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 29.75206611570248,
+       "lon": -94.77898180465401,
+       "score": -0.3860858874496977,
+       "dist_m": 1964483.5443588684,
+       "flights": [
+        [
+         "N854L",
+         "DA40"
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 37.551203736974486,
+       "lon": -83.63218468903496,
+       "score": -0.3861235392116296,
+       "dist_m": 2450479.231156116,
+       "flights": [
+        [
+         "N806BP",
+         "SR20"
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 41.43190801293568,
+       "lon": -82.96534476042318,
+       "score": -0.38629462470776094,
+       "dist_m": 2414505.2262764457,
+       "flights": [
+        [
+         "N463KJ",
+         "S22T"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 47.042759611929576,
+       "lon": -122.09976615791221,
+       "score": -0.38667419703272127,
+       "dist_m": 1082888.842935351,
+       "flights": [
+        [
+         "N21318",
+         "PA44"
+        ]
+       ]
+      }
+     ],
+     "job_id": "bmickpr54788",
+     "events": [
+      {
+       "id": 1,
+       "t0": 2365.6094538761918,
+       "f0": 119.29827881887499,
+       "v": 75.85223625999663,
+       "d": 2280.730615480599,
+       "conf": 15.035299301147461
+      }
+     ],
+     "failure": "wrong_top_match"
+    }
+   }
+  },
+  {
+   "id": "mickriley_20260921",
+   "place": "Mick Riley Golf Course, Murray UT",
+   "tier": "medium",
+   "radius_m": 500,
+   "day": "2026-09-21",
+   "region": "CONUS",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "live_audio",
+   "audio_note": "live golf-course audio (visual screen ok)",
+   "screen": {
+    "duration_s": 3600.0,
+    "rms_dbfs_median": -50.433990478515625,
+    "rms_dbfs_p10": -53.768089294433594,
+    "rms_dbfs_p90": -42.847957611083984,
+    "peak_dbfs": -10.911367416381836,
+    "frac_silent_lt_m70": 0.0002777777777777778,
+    "frac_silent_lt_m60": 0.0002777777777777778,
+    "flatness_median": 0.010381452526030607,
+    "lowband_share_median": 0.8564244076651093
+   },
+   "n_events": 40,
+   "n_primary": 22,
+   "selected_events": [
+    {
+     "id": 1,
+     "t0": 2087.4888698335008,
+     "f0": 75.48948056903373,
+     "v": 82.2679123866051,
+     "d": 3219.7566011215936,
+     "conf": 16.564895629882812,
+     "rms": 2.0862792979932814,
+     "primary": true,
+     "n_line": 103
+    },
+    {
+     "id": 4,
+     "t0": 2572.287941816329,
+     "f0": 132.8997854193894,
+     "v": 44.971770302515836,
+     "d": 1226.0018676741765,
+     "conf": 10.248226165771484,
+     "rms": 1.6916233592569454,
+     "primary": true,
+     "n_line": 93
+    }
+   ],
+   "runs": {
+    "blind": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 2070.3320293426514,
+     "sc": null,
+     "pipeline": {
+      "n_candidates": 5606095,
+      "n_offset": 426003,
+      "n_silence1": 408180,
+      "n_silence2": 219962,
+      "n_dense": 80000,
+      "n": null
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 32.966672655407834,
+       "lon": -96.60583439635906,
+       "score": 2.683804255696083,
+       "dist_m": 1602416.0216449846,
+       "flights": [
+        [
+         "N256TR",
+         "SR20"
+        ],
+        [
+         "N831AF",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 26.459306503772908,
+       "lon": -81.17169908499062,
+       "score": 2.674355444604366,
+       "dist_m": 3229471.174762207,
+       "flights": [
+        [
+         "N74YC",
+         "PA30"
+        ],
+        [
+         "N9448Z",
+         "C172"
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 28.217301473230325,
+       "lon": -80.68526716556994,
+       "score": 2.6569746687830396,
+       "dist_m": 3154532.512501871,
+       "flights": [
+        [
+         "N357BK",
+         "GLAS"
+        ],
+        [
+         "N295HS",
+         "B06"
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 30.983201581027668,
+       "lon": -86.35581327064453,
+       "score": 2.645709849613991,
+       "dist_m": 2527541.5686771404,
+       "flights": [
+        [
+         "14-20665",
+         "H60"
+        ],
+        [
+         "N2330D",
+         "PA38"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 33.9700862378728,
+       "lon": -83.47715990192096,
+       "score": 2.6453038767822754,
+       "dist_m": 2606129.2533612438,
+       "flights": [
+        [
+         "N6628X",
+         "BE76"
+        ],
+        [
+         "N141MA",
+         "RV12"
+        ]
+       ]
+      }
+     ],
+     "job_id": "bmickbl56753",
+     "events": [
+      {
+       "id": 1,
+       "t0": 2087.4888698335008,
+       "f0": 75.48948056903373,
+       "v": 82.2679123866051,
+       "d": 3219.7566011215936,
+       "conf": 16.564895629882812
+      },
+      {
+       "id": 4,
+       "t0": 2572.287941816329,
+       "f0": 132.8997854193894,
+       "v": 44.971770302515836,
+       "d": 1226.0018676741765,
+       "conf": 10.248226165771484
+      }
+     ],
+     "failure": "too_slow_timeout"
+    },
+    "prior": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 28.48181414604187,
+     "sc": {
+      "n_rows": 35,
+      "hit_radius_m": 1000.0,
+      "truth_rank": null,
+      "top1_dist_m": 3009090.5345367305,
+      "top1_lat": 29.85582105641394,
+      "top1_lon": -81.25048419580469,
+      "min_dist_top10_m": 592248.9222872643,
+      "s1": 2.5759580209547024,
+      "s2": 2.3315616719947037,
+      "margin": 0.09487590518630443,
+      "truth_score": null,
+      "top1_flights": [
+       "N89AB",
+       "N618EP"
+      ],
+      "top1_types": [
+       "SR22",
+       "C172"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": 140678,
+      "n_offset": 1596,
+      "n_silence1": 1536,
+      "n_silence2": 924,
+      "n_dense": 3696,
+      "n": null
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 29.85582105641394,
+       "lon": -81.25048419580469,
+       "score": 2.5759580209547024,
+       "dist_m": 3009090.5345367305,
+       "flights": [
+        [
+         "N89AB",
+         "SR22"
+        ],
+        [
+         "N618EP",
+         "C172"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 40.94547251167805,
+       "lon": -104.84536522521037,
+       "score": 2.3315616719947037,
+       "dist_m": 592248.9222872643,
+       "flights": [
+        [
+         "N506JM",
+         "PA44"
+        ],
+        [
+         "N526ND",
+         "C172"
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 33.47242184692777,
+       "lon": -96.62519482705387,
+       "score": 2.2797147136191263,
+       "dist_m": 1568038.0900110172,
+       "flights": [
+        [
+         "N441MG",
+         ""
+        ],
+        [
+         "abb63a",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 26.60303629177147,
+       "lon": -80.52594656887341,
+       "score": 2.2449559388862577,
+       "dist_m": 3271330.4853796843,
+       "flights": [
+        [
+         "a93785",
+         ""
+        ],
+        [
+         "N53371",
+         "C172"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 38.28287818900467,
+       "lon": -120.60601195424192,
+       "score": 2.194303890041236,
+       "dist_m": 794381.0955581294,
+       "flights": [
+        [
+         "N1128C",
+         "T210"
+        ],
+        [
+         "N3948Q",
+         "C172"
+        ]
+       ]
+      }
+     ],
+     "job_id": "bmickpr58862",
+     "events": [
+      {
+       "id": 1,
+       "t0": 2087.4888698335008,
+       "f0": 75.48948056903373,
+       "v": 82.2679123866051,
+       "d": 3219.7566011215936,
+       "conf": 16.564895629882812
+      },
+      {
+       "id": 4,
+       "t0": 2572.287941816329,
+       "f0": 132.8997854193894,
+       "v": 44.971770302515836,
+       "d": 1226.0018676741765,
+       "conf": 10.248226165771484
+      }
+     ],
+     "failure": "wrong_top_match"
+    },
+    "prior_single": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "single",
+     "elapsed_s": 67.94655680656433,
+     "sc": {
+      "n_rows": 100,
+      "hit_radius_m": 1000.0,
+      "truth_rank": null,
+      "top1_dist_m": 1418320.2309430179,
+      "top1_lat": 36.19116061803809,
+      "top1_lon": -96.59513452542902,
+      "min_dist_top10_m": 650005.1291911576,
+      "s1": -1.0067901938821702,
+      "s2": -1.0136997894727073,
+      "margin": 0.006862994527085979,
+      "truth_score": null,
+      "top1_flights": [
+       "N550LW"
+      ],
+      "top1_types": [
+       "LNCE"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": null,
+      "n_offset": null,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": 176946
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 36.19116061803809,
+       "lon": -96.59513452542902,
+       "score": -1.0067901938821702,
+       "dist_m": 1418320.2309430179,
+       "flights": [
+        [
+         "N550LW",
+         "LNCE"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 41.52892561983471,
+       "lon": -76.44669389533729,
+       "score": -1.0136997894727073,
+       "dist_m": 2949396.493780946,
+       "flights": [
+        [
+         "N955WT",
+         "SR22"
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 45.1598993891484,
+       "lon": -92.95097197015072,
+       "score": -1.044271706738584,
+       "dist_m": 1615815.7770585567,
+       "flights": [
+        [
+         "N228CC",
+         "S22T"
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 33.94538268056055,
+       "lon": -116.63304020024368,
+       "score": -1.0489496847377482,
+       "dist_m": 856803.4569066301,
+       "flights": [
+        [
+         "N543TC",
+         "C208"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 25.17606899029824,
+       "lon": -79.89467636746102,
+       "score": -1.053273930421076,
+       "dist_m": 3417825.920509715,
+       "flights": [
+        [
+         "e4a7e2",
+         ""
+        ]
+       ]
+      }
+     ],
+     "job_id": "bmickpr58931",
+     "events": [
+      {
+       "id": 1,
+       "t0": 2087.4888698335008,
+       "f0": 75.48948056903373,
+       "v": 82.2679123866051,
+       "d": 3219.7566011215936,
+       "conf": 16.564895629882812
+      }
+     ],
+     "failure": "wrong_top_match"
+    }
+   }
+  },
+  {
+   "id": "chicago_lakepointtower_20260920",
+   "place": "Lake Point Tower, 505 N Lake Shore Dr, Chicago IL (high floor)",
+   "tier": "precise",
+   "radius_m": 60,
+   "day": "2026-09-20",
+   "region": "CONUS",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "no_live_audio",
+   "audio_note": "music track (song-length blocks of tonal lines in the spectrogram; description: royalty-free ambient under the picture)",
+   "screen": {
+    "duration_s": 3600.0,
+    "rms_dbfs_median": -32.277992248535156,
+    "rms_dbfs_p10": -47.79977798461914,
+    "rms_dbfs_p90": -25.828950881958008,
+    "peak_dbfs": -12.715615272521973,
+    "frac_silent_lt_m70": 0.017222222222222222,
+    "frac_silent_lt_m60": 0.025555555555555557,
+    "flatness_median": 0.007922867164979187,
+    "lowband_share_median": 0.5183630797427856
+   },
+   "n_events": 23,
+   "n_primary": 14,
+   "selected_events": [
+    {
+     "id": 1,
+     "t0": 3142.5799197531474,
+     "f0": 146.9166688711009,
+     "v": 97.79828395658879,
+     "d": 486.22867166615623,
+     "conf": 12.102975845336914,
+     "rms": 5.138898753657804,
+     "primary": true,
+     "n_line": 92
+    },
+    {
+     "id": 3,
+     "t0": 1192.8995017324896,
+     "f0": 96.96200648102176,
+     "v": 141.486794067072,
+     "d": 104.18105631239109,
+     "conf": 8.880888938903809,
+     "rms": 4.953139445763953,
+     "primary": true,
+     "n_line": 15
+    }
+   ],
+   "runs": {
+    "blind": {
+     "status": "no silence survivors",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 18.52290916442871,
+     "sc": {
+      "n_rows": 0,
+      "hit_radius_m": 560.0
+     },
+     "pipeline": {
+      "n_candidates": 39108,
+      "n_offset": 5,
+      "n_silence1": 5,
+      "n_silence2": 0,
+      "n_dense": null,
+      "n": null
+     },
+     "top5": [],
+     "job_id": "bchicbl54863",
+     "events": [
+      {
+       "id": 3,
+       "t0": 1192.8995017324896,
+       "f0": 96.96200648102176,
+       "v": 141.486794067072,
+       "d": 104.18105631239109,
+       "conf": 8.880888938903809
+      },
+      {
+       "id": 1,
+       "t0": 3142.5799197531474,
+       "f0": 146.9166688711009,
+       "v": 97.79828395658879,
+       "d": 486.22867166615623,
+       "conf": 12.102975845336914
+      }
+     ],
+     "failure": "no_candidate_survived_filters"
+    },
+    "prior": {
+     "status": "no offset survivors",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 1.8897314071655273,
+     "sc": {
+      "n_rows": 0,
+      "hit_radius_m": 560.0
+     },
+     "pipeline": {
+      "n_candidates": 370,
+      "n_offset": 0,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": null
+     },
+     "top5": [],
+     "job_id": "bchicpr54866",
+     "events": [
+      {
+       "id": 3,
+       "t0": 1192.8995017324896,
+       "f0": 96.96200648102176,
+       "v": 141.486794067072,
+       "d": 104.18105631239109,
+       "conf": 8.880888938903809
+      },
+      {
+       "id": 1,
+       "t0": 3142.5799197531474,
+       "f0": 146.9166688711009,
+       "v": 97.79828395658879,
+       "d": 486.22867166615623,
+       "conf": 12.102975845336914
+      }
+     ],
+     "failure": "no_candidate_survived_filters"
+    },
+    "prior_single": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "single",
+     "elapsed_s": 64.6909122467041,
+     "sc": {
+      "n_rows": 100,
+      "hit_radius_m": 560.0,
+      "truth_rank": null,
+      "top1_dist_m": 1131629.4187105822,
+      "top1_lat": 39.97484728710025,
+      "top1_lon": -74.36863233910425,
+      "min_dist_top10_m": 446080.56836100033,
+      "s1": -2.9821014247156103,
+      "s2": -3.1966734141080444,
+      "margin": 0.07195328355168094,
+      "truth_score": null,
+      "top1_flights": [
+       "20-5991"
+      ],
+      "top1_types": [
+       "C30J"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": null,
+      "n_offset": null,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": 165558
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 39.97484728710025,
+       "lon": -74.36863233910425,
+       "score": -2.9821014247156103,
+       "dist_m": 1131629.4187105822,
+       "flights": [
+        [
+         "20-5991",
+         "C30J"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 39.8401006108516,
+       "lon": -104.78098916826535,
+       "score": -3.1966734141080444,
+       "dist_m": 1459014.3347059754,
+       "flights": [
+        [
+         "N637SY",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 38.17463169241825,
+       "lon": -85.6407667580129,
+       "score": -3.2072398894988403,
+       "dist_m": 446080.56836100033,
+       "flights": [
+        [
+         "N35AS",
+         "PC12"
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 36.51095939633489,
+       "lon": -94.05776310314242,
+       "score": -3.267428241829055,
+       "dist_m": 815793.3729195287,
+       "flights": [
+        [
+         "N580MA",
+         "TBM8"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 31.965504850880343,
+       "lon": -102.26787663975372,
+       "score": -3.4097109234880265,
+       "dist_m": 1702999.7557773893,
+       "flights": [
+        [
+         "N425WG",
+         "C425"
+        ]
+       ]
+      }
+     ],
+     "job_id": "bchicpr54932",
+     "events": [
+      {
+       "id": 1,
+       "t0": 3142.5799197531474,
+       "f0": 146.9166688711009,
+       "v": 97.79828395658879,
+       "d": 486.22867166615623,
+       "conf": 12.102975845336914
+      }
+     ],
+     "failure": "wrong_top_match"
+    }
+   }
+  },
+  {
+   "id": "sunnyisles_intracoastal_20260920",
+   "place": "Sunny Isles Beach high-rise overlooking the Intracoastal and William Lehman Causeway, FL",
+   "tier": "coarse",
+   "radius_m": 800,
+   "day": "2026-09-20",
+   "region": "CONUS",
+   "prior_s": 219,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "no_live_audio",
+   "audio_note": "digital silence (audio track all zeros)",
+   "screen": {
+    "duration_s": 3600.0,
+    "rms_dbfs_median": -93.16151428222656,
+    "rms_dbfs_p10": -93.34870910644531,
+    "rms_dbfs_p90": -92.96700286865234,
+    "peak_dbfs": -78.26780700683594,
+    "frac_silent_lt_m70": 1.0,
+    "frac_silent_lt_m60": 1.0,
+    "flatness_median": 0.45864214304338763,
+    "lowband_share_median": 0.19880217800473549
+   },
+   "n_events": 4,
+   "n_primary": 2,
+   "selected_events": [
+    {
+     "id": 1,
+     "t0": 3617.6154157702026,
+     "f0": 318.48936674545655,
+     "v": 173.74667730459527,
+     "d": 4684.143519998755,
+     "conf": 8.861631393432617,
+     "rms": 7.510131718652561,
+     "primary": true,
+     "n_line": 45
+    }
+   ],
+   "runs": {}
+  },
+  {
+   "id": "clearwater_pier60_20260905",
+   "place": "Pier 60, Clearwater Beach FL",
+   "tier": "precise",
+   "radius_m": 250,
+   "day": "2026-09-05",
+   "region": "CONUS",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "y2mate_mp3",
+   "download_error": null,
+   "audio": "no_live_audio",
+   "audio_note": "digital silence (audio track all zeros)",
+   "screen": {
+    "duration_s": 3265.00275,
+    "rms_dbfs_median": -240.00001525878906,
+    "rms_dbfs_p10": -240.00001525878906,
+    "rms_dbfs_p90": -240.00001525878906,
+    "peak_dbfs": -240.00001525878906,
+    "frac_silent_lt_m70": 1.0,
+    "frac_silent_lt_m60": 1.0,
+    "flatness_median": 1.000000000000008,
+    "lowband_share_median": 0.03735632183908351
+   },
+   "n_events": 0,
+   "n_primary": 0,
+   "selected_events": [],
+   "runs": {}
+  },
+  {
+   "id": "destin_harborwalk_20261008",
+   "place": "HarborWalk Village / Emerald Grande, Destin FL",
+   "tier": "precise",
+   "radius_m": 200,
+   "day": "2026-10-08",
+   "region": "CONUS",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "no_live_audio",
+   "audio_note": "digital silence (audio track all zeros)",
+   "screen": {
+    "duration_s": 3600.007,
+    "rms_dbfs_median": -240.00001525878906,
+    "rms_dbfs_p10": -240.00001525878906,
+    "rms_dbfs_p90": -240.00001525878906,
+    "peak_dbfs": -240.00001525878906,
+    "frac_silent_lt_m70": 1.0,
+    "frac_silent_lt_m60": 1.0,
+    "flatness_median": 1.000000000000008,
+    "lowband_share_median": 0.03735632183908351
+   },
+   "n_events": 0,
+   "n_primary": 0,
+   "selected_events": [],
+   "runs": {}
+  },
+  {
+   "id": "asheville_groveparkinn_20251031",
+   "place": "The Omni Grove Park Inn, Asheville NC",
+   "tier": "precise",
+   "radius_m": 200,
+   "day": "2025-10-31",
+   "region": "CONUS",
+   "prior_s": 63,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "live_audio",
+   "audio_note": "auto: non-silent (pending visual screen)",
+   "screen": {
+    "duration_s": 3600.0,
+    "rms_dbfs_median": -24.65286636352539,
+    "rms_dbfs_p10": -27.19127655029297,
+    "rms_dbfs_p90": -22.83458709716797,
+    "peak_dbfs": -12.306028366088867,
+    "frac_silent_lt_m70": 0.005833333333333334,
+    "frac_silent_lt_m60": 0.014722222222222222,
+    "flatness_median": 0.003505481943012408,
+    "lowband_share_median": 0.40679651601408456
+   },
+   "n_events": 27,
+   "n_primary": 27,
+   "selected_events": [
+    {
+     "id": 1,
+     "t0": 2296.5028440734236,
+     "f0": 62.620426314585075,
+     "v": 100.54925781010012,
+     "d": 463.31423908712844,
+     "conf": 8.5181884765625,
+     "rms": 4.844663170647327,
+     "primary": true,
+     "n_line": 81
+    },
+    {
+     "id": 3,
+     "t0": 87.09200167483472,
+     "f0": 60.74925815047095,
+     "v": 96.11115871933708,
+     "d": 1282.1713485104613,
+     "conf": 8.432337760925293,
+     "rms": 3.298863474935891,
+     "primary": true,
+     "n_line": 75
+    }
+   ],
+   "runs": {
+    "blind": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 107.7779815196991,
+     "sc": {
+      "n_rows": 100,
+      "hit_radius_m": 700.0,
+      "truth_rank": null,
+      "top1_dist_m": 3305594.550338294,
+      "top1_lat": 36.4395436579231,
+      "top1_lon": -119.51614570999385,
+      "min_dist_top10_m": 584786.3760025025,
+      "s1": 1.1087584002543995,
+      "s2": 1.0903928083852867,
+      "margin": 0.01656410617939751,
+      "truth_score": null,
+      "top1_flights": [
+       "N359DG",
+       "N995FE"
+      ],
+      "top1_types": [
+       "B350",
+       "C208"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": 832010,
+      "n_offset": 7149,
+      "n_silence1": 6177,
+      "n_silence2": 1772,
+      "n_dense": 7088,
+      "n": null
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 36.4395436579231,
+       "lon": -119.51614570999385,
+       "score": 1.1087584002543995,
+       "dist_m": 3305594.550338294,
+       "flights": [
+        [
+         "N359DG",
+         "B350"
+        ],
+        [
+         "N995FE",
+         "C208"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 44.82707509881423,
+       "lon": -92.78898120087632,
+       "score": 1.0903928083852867,
+       "dist_m": 1341261.2437614182,
+       "flights": [
+        [
+         "N342PE",
+         "PC12"
+        ],
+        [
+         "N350GL",
+         "B350"
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 29.66807402084082,
+       "lon": -95.61993990323671,
+       "score": 1.081547478510597,
+       "dist_m": 1390150.5235008476,
+       "flights": [
+        [
+         "N5742V",
+         "BE35"
+        ],
+        [
+         "N641WT",
+         "SR22"
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 38.895526410348545,
+       "lon": -104.76969685607344,
+       "score": 1.0800174666353382,
+       "dist_m": 1995427.8181552298,
+       "flights": [
+        [
+         "N99420",
+         "B26"
+        ],
+        [
+         "77-0464",
+         "DHC6"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 36.17454186130075,
+       "lon": -95.51409655057108,
+       "score": 1.0771809085478563,
+       "dist_m": 1169228.2599893303,
+       "flights": [
+        [
+         "N737DB",
+         "AEST"
+        ],
+        [
+         "N737DB",
+         "AEST"
+        ]
+       ]
+      }
+     ],
+     "job_id": "bashebl60779",
+     "events": [
+      {
+       "id": 3,
+       "t0": 87.09200167483472,
+       "f0": 60.74925815047095,
+       "v": 96.11115871933708,
+       "d": 1282.1713485104613,
+       "conf": 8.432337760925293
+      },
+      {
+       "id": 1,
+       "t0": 2296.5028440734236,
+       "f0": 62.620426314585075,
+       "v": 100.54925781010012,
+       "d": 463.31423908712844,
+       "conf": 8.5181884765625
+      }
+     ],
+     "failure": "wrong_top_match"
+    },
+    "prior": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 5.118102550506592,
+     "sc": {
+      "n_rows": 1,
+      "hit_radius_m": 700.0,
+      "truth_rank": null,
+      "top1_dist_m": 1830971.8736687857,
+      "top1_lat": 29.063510600071865,
+      "top1_lon": -100.46262075102464,
+      "min_dist_top10_m": 1830971.8736687857,
+      "s1": 0.7426042662325701,
+      "s2": null,
+      "margin": null,
+      "truth_score": null,
+      "top1_flights": [
+       "08-3907",
+       "03-3684"
+      ],
+      "top1_types": [
+       "TEX2",
+       "TEX2"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": 9833,
+      "n_offset": 71,
+      "n_silence1": 64,
+      "n_silence2": 35,
+      "n_dense": 140,
+      "n": null
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 29.063510600071865,
+       "lon": -100.46262075102464,
+       "score": 0.7426042662325701,
+       "dist_m": 1830971.8736687857,
+       "flights": [
+        [
+         "08-3907",
+         "TEX2"
+        ],
+        [
+         "03-3684",
+         "TEX2"
+        ]
+       ]
+      }
+     ],
+     "job_id": "bashepr59012",
+     "events": [
+      {
+       "id": 3,
+       "t0": 87.09200167483472,
+       "f0": 60.74925815047095,
+       "v": 96.11115871933708,
+       "d": 1282.1713485104613,
+       "conf": 8.432337760925293
+      },
+      {
+       "id": 1,
+       "t0": 2296.5028440734236,
+       "f0": 62.620426314585075,
+       "v": 100.54925781010012,
+       "d": 463.31423908712844,
+       "conf": 8.5181884765625
+      }
+     ],
+     "failure": "wrong_top_match"
+    },
+    "prior_single": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "single",
+     "elapsed_s": 61.79817819595337,
+     "sc": {
+      "n_rows": 100,
+      "hit_radius_m": 700.0,
+      "truth_rank": null,
+      "top1_dist_m": 1786529.5925869888,
+      "top1_lat": 29.41789435860582,
+      "top1_lon": -100.15835426282486,
+      "min_dist_top10_m": 483822.74669280014,
+      "s1": -3.807571783858042,
+      "s2": -3.9230186166596335,
+      "margin": 0.030320329951761153,
+      "truth_score": null,
+      "top1_flights": [
+       "98-3036"
+      ],
+      "top1_types": [
+       "TEX2"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": null,
+      "n_offset": null,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": 163329
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 29.41789435860582,
+       "lon": -100.15835426282486,
+       "score": -3.807571783858042,
+       "dist_m": 1786529.5925869888,
+       "flights": [
+        [
+         "98-3036",
+         "TEX2"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 42.084081925979156,
+       "lon": -71.34809566367876,
+       "score": -3.9230186166596335,
+       "dist_m": 1205030.4739635754,
+       "flights": [
+        [
+         "N816WG",
+         "PC12"
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 40.066475026949334,
+       "lon": -104.433473622078,
+       "score": -3.9253234078655104,
+       "dist_m": 1979236.2743872663,
+       "flights": [
+        [
+         "N72PL",
+         "BE36"
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 29.565217391304348,
+       "lon": -100.85975470165371,
+       "score": -3.9309083271803797,
+       "dist_m": 1839790.7997765918,
+       "flights": [
+        [
+         "02-3634",
+         "TEX2"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 39.97125404240029,
+       "lon": -82.52067203455371,
+       "score": -3.956586866376563,
+       "dist_m": 483822.74669280014,
+       "flights": [
+        [
+         "N647ST",
+         "P46T"
+        ]
+       ]
+      }
+     ],
+     "job_id": "bashepr59075",
+     "events": [
+      {
+       "id": 1,
+       "t0": 2296.5028440734236,
+       "f0": 62.620426314585075,
+       "v": 100.54925781010012,
+       "d": 463.31423908712844,
+       "conf": 8.5181884765625
+      }
+     ],
+     "failure": "wrong_top_match"
+    }
+   }
+  },
+  {
+   "id": "lorain_lighthouse_20260615",
+   "place": "Lorain Lighthouse (West Breakwater Light), Lorain OH",
+   "tier": "precise",
+   "radius_m": 250,
+   "day": "2026-06-15",
+   "region": "CONUS",
+   "prior_s": 81,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "live_audio",
+   "audio_note": "live but wind-dominated (96% of energy < 150 Hz)",
+   "screen": {
+    "duration_s": 3600.007,
+    "rms_dbfs_median": -27.33199119567871,
+    "rms_dbfs_p10": -42.74655532836914,
+    "rms_dbfs_p90": -12.269699096679688,
+    "peak_dbfs": 0.0,
+    "frac_silent_lt_m70": 0.0,
+    "frac_silent_lt_m60": 0.0,
+    "flatness_median": 0.015395724763294538,
+    "lowband_share_median": 0.9605695973339604
+   },
+   "n_events": 38,
+   "n_primary": 15,
+   "selected_events": [
+    {
+     "id": 1,
+     "t0": 1620.205892795663,
+     "f0": 192.73194047248475,
+     "v": 119.68403621338526,
+     "d": 577.0169864751404,
+     "conf": 14.805575370788574,
+     "rms": 4.511015879355913,
+     "primary": true,
+     "n_line": 112
+    },
+    {
+     "id": 2,
+     "t0": 1769.946443696128,
+     "f0": 203.67177635234827,
+     "v": 22.974642557341987,
+     "d": 499.35770673010876,
+     "conf": 14.212300300598145,
+     "rms": 1.90258583060695,
+     "primary": true,
+     "n_line": 51
+    }
+   ],
+   "runs": {
+    "blind": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 294.70233154296875,
+     "sc": {
+      "n_rows": 53,
+      "hit_radius_m": 750.0,
+      "truth_rank": null,
+      "top1_dist_m": 1653223.7421678284,
+      "top1_lat": 32.966672655407834,
+      "top1_lon": -97.55554845054013,
+      "min_dist_top10_m": 689135.9172352586,
+      "s1": 1.266966862223793,
+      "s2": 1.2548292897790647,
+      "margin": 0.009580023603320106,
+      "truth_score": null,
+      "top1_flights": [
+       "169229",
+       "N6271E"
+      ],
+      "top1_types": [
+       "C30J",
+       "C172"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": 272840,
+      "n_offset": 673,
+      "n_silence1": 673,
+      "n_silence2": 616,
+      "n_dense": 2464,
+      "n": null
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 32.966672655407834,
+       "lon": -97.55554845054013,
+       "score": 1.266966862223793,
+       "dist_m": 1653223.7421678284,
+       "flights": [
+        [
+         "169229",
+         "C30J"
+        ],
+        [
+         "N6271E",
+         "C172"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 37.72143370463529,
+       "lon": -122.21332960697275,
+       "score": 1.2548292897790647,
+       "dist_m": 3423657.897584333,
+       "flights": [
+        [
+         "N404TC",
+         "PC12"
+        ],
+        [
+         "N739UL",
+         "C172"
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 39.35546173194395,
+       "lon": -104.62653779761033,
+       "score": 1.2368349094258342,
+       "dist_m": 1908554.6845073018,
+       "flights": [
+        [
+         "N353KQ",
+         "BE9L"
+        ],
+        [
+         "N838SP",
+         "C172"
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 30.37234998203378,
+       "lon": -86.33405230440917,
+       "score": 1.1692596326160491,
+       "dist_m": 1289536.850250051,
+       "flights": [
+        [
+         "166110",
+         "TEX2"
+        ],
+        [
+         "N73306",
+         "C172"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 42.080039525691696,
+       "lon": -71.26840968571857,
+       "score": 1.0950606399374783,
+       "dist_m": 907521.4269190502,
+       "flights": [
+        [
+         "N22NY",
+         "PC12"
+        ],
+        [
+         "N291MK",
+         "P28A"
+        ]
+       ]
+      }
+     ],
+     "job_id": "blorabl61075",
+     "events": [
+      {
+       "id": 1,
+       "t0": 1620.205892795663,
+       "f0": 192.73194047248475,
+       "v": 119.68403621338526,
+       "d": 577.0169864751404,
+       "conf": 14.805575370788574
+      },
+      {
+       "id": 2,
+       "t0": 1769.946443696128,
+       "f0": 203.67177635234827,
+       "v": 22.974642557341987,
+       "d": 499.35770673010876,
+       "conf": 14.212300300598145
+      }
+     ],
+     "failure": "wrong_top_match"
+    },
+    "prior": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 10.224931716918945,
+     "sc": {
+      "n_rows": 3,
+      "hit_radius_m": 750.0,
+      "truth_rank": null,
+      "top1_dist_m": 689135.9172352586,
+      "top1_lat": 40.661606180380886,
+      "top1_lon": -74.03838778694735,
+      "min_dist_top10_m": 688521.780074788,
+      "s1": 0.9368848462287811,
+      "s2": 0.8453074655687864,
+      "margin": 0.09774667722358706,
+      "truth_score": null,
+      "top1_flights": [
+       "N820LB",
+       "N403TD"
+      ],
+      "top1_types": [
+       "PC12",
+       "B407"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": 2816,
+      "n_offset": 30,
+      "n_silence1": 30,
+      "n_silence2": 30,
+      "n_dense": 120,
+      "n": null
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 40.661606180380886,
+       "lon": -74.03838778694735,
+       "score": 0.9368848462287811,
+       "dist_m": 689135.9172352586,
+       "flights": [
+        [
+         "N820LB",
+         "PC12"
+        ],
+        [
+         "N403TD",
+         "B407"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 40.67867409270571,
+       "lon": -74.04175515196536,
+       "score": 0.8453074655687864,
+       "dist_m": 688521.780074788,
+       "flights": [
+        [
+         "N820LB",
+         "PC12"
+        ],
+        [
+         "N65DJ",
+         "B407"
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 32.62082285303629,
+       "lon": -97.51808976915606,
+       "score": 0.7567468449403284,
+       "dist_m": 1675172.842290092,
+       "flights": [
+        [
+         "169229",
+         "C30J"
+        ],
+        [
+         "N417CF",
+         "B407"
+        ]
+       ]
+      }
+     ],
+     "job_id": "blorapr59087",
+     "events": [
+      {
+       "id": 1,
+       "t0": 1620.205892795663,
+       "f0": 192.73194047248475,
+       "v": 119.68403621338526,
+       "d": 577.0169864751404,
+       "conf": 14.805575370788574
+      },
+      {
+       "id": 2,
+       "t0": 1769.946443696128,
+       "f0": 203.67177635234827,
+       "v": 22.974642557341987,
+       "d": 499.35770673010876,
+       "conf": 14.212300300598145
+      }
+     ],
+     "failure": "wrong_top_match"
+    },
+    "prior_single": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "single",
+     "elapsed_s": 48.39357900619507,
+     "sc": {
+      "n_rows": 100,
+      "hit_radius_m": 750.0,
+      "truth_rank": null,
+      "top1_dist_m": 982972.2379452237,
+      "top1_lat": 32.81171397772188,
+      "top1_lon": -79.99397726189368,
+      "min_dist_top10_m": 164426.37998848062,
+      "s1": -2.5168480483435514,
+      "s2": -2.6108229342349962,
+      "margin": 0.03733832320679585,
+      "truth_score": null,
+      "top1_flights": [
+       "N557AP"
+      ],
+      "top1_types": [
+       "B350"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": null,
+      "n_offset": null,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": 134968
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 32.81171397772188,
+       "lon": -79.99397726189368,
+       "score": -2.5168480483435514,
+       "dist_m": 982972.2379452237,
+       "flights": [
+        [
+         "N557AP",
+         "B350"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 29.57599712540424,
+       "lon": -100.87052223886865,
+       "score": -2.6108229342349962,
+       "dist_m": 2138770.509701293,
+       "flights": [
+        [
+         "08-3907",
+         "TEX2"
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 42.54940711462451,
+       "lon": -83.56173290069682,
+       "score": -2.613165443267816,
+       "dist_m": 164426.37998848062,
+       "flights": [
+        [
+         "N412G",
+         "B350"
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 37.96083363277039,
+       "lon": -121.1145001603203,
+       "score": -2.667140021424772,
+       "dist_m": 3323810.7463511783,
+       "flights": [
+        [
+         "N400AY",
+         "B350"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 39.87423643550126,
+       "lon": -82.72454726007383,
+       "score": -2.6724869754234097,
+       "dist_m": 183882.61728453837,
+       "flights": [
+        [
+         "N143TA",
+         "BE20"
+        ]
+       ]
+      }
+     ],
+     "job_id": "blorapr59137",
+     "events": [
+      {
+       "id": 1,
+       "t0": 1620.205892795663,
+       "f0": 192.73194047248475,
+       "v": 119.68403621338526,
+       "d": 577.0169864751404,
+       "conf": 14.805575370788574
+      }
+     ],
+     "failure": "wrong_top_match"
+    }
+   }
+  },
+  {
+   "id": "jaxbeach_pier_20260626",
+   "place": "Jacksonville Beach Fishing Pier, Jacksonville Beach FL",
+   "tier": "precise",
+   "radius_m": 250,
+   "day": "2026-06-26",
+   "region": "CONUS",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "y2mate_mp3",
+   "download_error": null,
+   "audio": "no_live_audio",
+   "audio_note": "digital silence (audio track all zeros)",
+   "screen": {
+    "duration_s": 6574.916,
+    "rms_dbfs_median": -240.00001525878906,
+    "rms_dbfs_p10": -240.00001525878906,
+    "rms_dbfs_p90": -240.00001525878906,
+    "peak_dbfs": -240.00001525878906,
+    "frac_silent_lt_m70": 1.0,
+    "frac_silent_lt_m60": 1.0,
+    "flatness_median": 1.000000000000008,
+    "lowband_share_median": 0.03735632183908351
+   },
+   "n_events": 0,
+   "n_primary": 0,
+   "selected_events": [],
+   "runs": {}
+  },
+  {
+   "id": "notting_hill_gate_20261016",
+   "place": "Outside Notting Hill Gate Station, London UK",
+   "tier": "precise",
+   "radius_m": 100,
+   "day": "2026-10-16",
+   "region": "Europe",
+   "prior_s": 165,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "live_audio",
+   "audio_note": "auto: non-silent (pending visual screen)",
+   "screen": {
+    "duration_s": 3600.007,
+    "rms_dbfs_median": -30.196788787841797,
+    "rms_dbfs_p10": -34.93374252319336,
+    "rms_dbfs_p90": -24.920976638793945,
+    "peak_dbfs": -3.2164595127105713,
+    "frac_silent_lt_m70": 0.001388888888888889,
+    "frac_silent_lt_m60": 0.001388888888888889,
+    "flatness_median": 0.10770513735648754,
+    "lowband_share_median": 0.5912031020711542
+   },
+   "n_events": 32,
+   "n_primary": 18,
+   "selected_events": [
+    {
+     "id": 1,
+     "t0": 1339.52017561414,
+     "f0": 603.5639354772719,
+     "v": 148.31174163974498,
+     "d": 2145.2762062080506,
+     "conf": 10.313908576965332,
+     "rms": 4.004122946713908,
+     "primary": true,
+     "n_line": 32
+    },
+    {
+     "id": 2,
+     "t0": 590.1448719521587,
+     "f0": 298.8158680412153,
+     "v": 102.075272384042,
+     "d": 369.2019745067463,
+     "conf": 8.871349334716797,
+     "rms": 6.3827849091616615,
+     "primary": true,
+     "n_line": 81
+    }
+   ],
+   "runs": {
+    "blind": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 13.202382326126099,
+     "sc": {
+      "n_rows": 1,
+      "hit_radius_m": 600.0,
+      "truth_rank": null,
+      "top1_dist_m": 1443117.5582154326,
+      "top1_lat": 41.86713977721883,
+      "top1_lon": 12.54825585227902,
+      "min_dist_top10_m": 1443117.5582154326,
+      "s1": 1.1418808835429455,
+      "s2": null,
+      "margin": null,
+      "truth_score": null,
+      "top1_flights": [
+       "MM62335",
+       "4cae1f"
+      ],
+      "top1_types": [
+       "P180",
+       ""
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": 52210,
+      "n_offset": 26,
+      "n_silence1": 26,
+      "n_silence2": 26,
+      "n_dense": 104,
+      "n": null
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 41.86713977721883,
+       "lon": 12.54825585227902,
+       "score": 1.1418808835429455,
+       "dist_m": 1443117.5582154326,
+       "flights": [
+        [
+         "MM62335",
+         "P180"
+        ],
+        [
+         "4cae1f",
+         ""
+        ]
+       ]
+      }
+     ],
+     "job_id": "bnottbl61091",
+     "events": [
+      {
+       "id": 2,
+       "t0": 590.1448719521587,
+       "f0": 298.8158680412153,
+       "v": 102.075272384042,
+       "d": 369.2019745067463,
+       "conf": 8.871349334716797
+      },
+      {
+       "id": 1,
+       "t0": 1339.52017561414,
+       "f0": 603.5639354772719,
+       "v": 148.31174163974498,
+       "d": 2145.2762062080506,
+       "conf": 10.313908576965332
+      }
+     ],
+     "failure": "wrong_top_match"
+    },
+    "prior": {
+     "status": "no candidates",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 1.1988718509674072,
+     "sc": {
+      "n_rows": 0,
+      "hit_radius_m": 600.0
+     },
+     "pipeline": {
+      "n_candidates": null,
+      "n_offset": null,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": null
+     },
+     "top5": [],
+     "job_id": "bnottpr59190",
+     "events": [
+      {
+       "id": 2,
+       "t0": 590.1448719521587,
+       "f0": 298.8158680412153,
+       "v": 102.075272384042,
+       "d": 369.2019745067463,
+       "conf": 8.871349334716797
+      },
+      {
+       "id": 1,
+       "t0": 1339.52017561414,
+       "f0": 603.5639354772719,
+       "v": 148.31174163974498,
+       "d": 2145.2762062080506,
+       "conf": 10.313908576965332
+      }
+     ],
+     "failure": "no_candidate_survived_filters"
+    },
+    "prior_single": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "single",
+     "elapsed_s": 7.907215356826782,
+     "sc": {
+      "n_rows": 18,
+      "hit_radius_m": 600.0,
+      "truth_rank": null,
+      "top1_dist_m": 1202881.1028910931,
+      "top1_lat": 60.23176428314768,
+      "top1_lon": 11.304591299166802,
+      "min_dist_top10_m": 490073.2745933818,
+      "s1": -3.2714081204630823,
+      "s2": -3.627226562782492,
+      "margin": 0.10876614265695533,
+      "truth_score": null,
+      "top1_flights": [
+       "4c01f4"
+      ],
+      "top1_types": [
+       ""
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": null,
+      "n_offset": null,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": 19935
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 60.23176428314768,
+       "lon": 11.304591299166802,
+       "score": -3.2714081204630823,
+       "dist_m": 1202881.1028910931,
+       "flights": [
+        [
+         "4c01f4",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 44.55084441250449,
+       "lon": 25.59946948209445,
+       "score": -3.627226562782492,
+       "dist_m": 2054820.719661962,
+       "flights": [
+        [
+         "4869c5",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 45.583902263744164,
+       "lon": 9.780658333237971,
+       "score": -4.472181063055103,
+       "dist_m": 985059.8154894063,
+       "flights": [
+        [
+         "01028f",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 43.56270212001437,
+       "lon": 1.4132563949548214,
+       "score": -4.815958037438067,
+       "dist_m": 891743.5924598165,
+       "flights": [
+        [
+         "0a00c5",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 41.74631692418254,
+       "lon": -8.127059359185068,
+       "score": -10.892716345490316,
+       "dist_m": 1241374.811636569,
+       "flights": [
+        [
+         "OE-DWW",
+         "C172"
+        ]
+       ]
+      }
+     ],
+     "job_id": "bnottpr59199",
+     "events": [
+      {
+       "id": 1,
+       "t0": 1339.52017561414,
+       "f0": 603.5639354772719,
+       "v": 148.31174163974498,
+       "d": 2145.2762062080506,
+       "conf": 10.313908576965332
+      }
+     ],
+     "failure": "wrong_top_match"
+    }
+   }
+  },
+  {
+   "id": "stives_harbour_20260802",
+   "place": "St Ives Harbour, Cornwall UK (Classic Cottages cam)",
+   "tier": "medium",
+   "radius_m": 300,
+   "day": "2026-08-02",
+   "region": "Europe",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "no_live_audio",
+   "audio_note": "digital silence (audio track all zeros)",
+   "screen": {
+    "duration_s": 3600.0,
+    "rms_dbfs_median": -87.25119018554688,
+    "rms_dbfs_p10": -87.297607421875,
+    "rms_dbfs_p90": -87.20259857177734,
+    "peak_dbfs": -70.30899810791016,
+    "frac_silent_lt_m70": 1.0,
+    "frac_silent_lt_m60": 1.0,
+    "flatness_median": 0.2347488818282417,
+    "lowband_share_median": 0.06290211524798309
+   },
+   "n_events": 6,
+   "n_primary": 3,
+   "selected_events": [
+    {
+     "id": 1,
+     "t0": 12.850215175800285,
+     "f0": 621.0918605264641,
+     "v": 10.74598043895649,
+     "d": 50.00006626325416,
+     "conf": 6.816059589385986,
+     "rms": 4.603397660487739,
+     "primary": true,
+     "n_line": 40
+    },
+    {
+     "id": 3,
+     "t0": 3587.8854810735997,
+     "f0": 654.2793884886589,
+     "v": 11.98385703103875,
+     "d": 75.15364013780146,
+     "conf": 6.454391956329346,
+     "rms": 3.957379811155503,
+     "primary": true,
+     "n_line": 39
+    }
+   ],
+   "runs": {}
+  },
+  {
+   "id": "berchtesgaden_markt_20260418",
+   "place": "Berchtesgaden town center (Marktplatz), Bavaria DE",
+   "tier": "precise",
+   "radius_m": 250,
+   "day": "2026-04-18",
+   "region": "Europe",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "live_audio",
+   "audio_note": "auto: non-silent (pending visual screen)",
+   "screen": {
+    "duration_s": 3600.007,
+    "rms_dbfs_median": -46.311424255371094,
+    "rms_dbfs_p10": -53.930519104003906,
+    "rms_dbfs_p90": -41.22633743286133,
+    "peak_dbfs": -31.8544921875,
+    "frac_silent_lt_m70": 0.0,
+    "frac_silent_lt_m60": 0.019166666666666665,
+    "flatness_median": 8.244619550813624e-05,
+    "lowband_share_median": 0.008745117653321092
+   },
+   "n_events": 0,
+   "n_primary": 0,
+   "selected_events": [],
+   "runs": {}
+  },
+  {
+   "id": "krakow_rynek_20261108",
+   "place": "Main Market Square (Rynek Glowny), Krakow PL",
+   "tier": "precise",
+   "radius_m": 200,
+   "day": "2026-11-08",
+   "region": "Europe",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "no_live_audio",
+   "audio_note": "digital silence (audio track all zeros)",
+   "screen": {
+    "duration_s": 1800.0,
+    "rms_dbfs_median": -240.00001525878906,
+    "rms_dbfs_p10": -240.00001525878906,
+    "rms_dbfs_p90": -240.00001525878906,
+    "peak_dbfs": -240.00001525878906,
+    "frac_silent_lt_m70": 1.0,
+    "frac_silent_lt_m60": 1.0,
+    "flatness_median": 1.000000000000008,
+    "lowband_share_median": 0.03735632183908351
+   },
+   "n_events": 0,
+   "n_primary": 0,
+   "selected_events": [],
+   "runs": {}
+  },
+  {
+   "id": "moosburg_20240421",
+   "place": "North of Moosburg an der Isar, Bavaria DE",
+   "tier": "coarse",
+   "radius_m": 2000,
+   "day": "2024-04-21",
+   "region": "Europe",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "no_live_audio",
+   "audio_note": "digital silence (audio track all zeros)",
+   "screen": {
+    "duration_s": 3600.007,
+    "rms_dbfs_median": -240.00001525878906,
+    "rms_dbfs_p10": -240.00001525878906,
+    "rms_dbfs_p90": -240.00001525878906,
+    "peak_dbfs": -240.00001525878906,
+    "frac_silent_lt_m70": 1.0,
+    "frac_silent_lt_m60": 1.0,
+    "flatness_median": 1.000000000000008,
+    "lowband_share_median": 0.03735632183908351
+   },
+   "n_events": 0,
+   "n_primary": 0,
+   "selected_events": [],
+   "runs": {}
+  },
+  {
+   "id": "marquette_gales_20261105",
+   "place": "Lake Superior shoreline, Marquette MI (camera facing north)",
+   "tier": "coarse",
+   "radius_m": 3000,
+   "day": "2026-11-05",
+   "region": "CONUS",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "live_audio",
+   "audio_note": "auto: non-silent (pending visual screen)",
+   "screen": {
+    "duration_s": 3600.007,
+    "rms_dbfs_median": -28.67129898071289,
+    "rms_dbfs_p10": -30.091825485229492,
+    "rms_dbfs_p90": -27.616674423217773,
+    "peak_dbfs": -11.591802597045898,
+    "frac_silent_lt_m70": 0.0,
+    "frac_silent_lt_m60": 0.0,
+    "flatness_median": 0.12152681151814348,
+    "lowband_share_median": 0.31610976411378017
+   },
+   "n_events": 2,
+   "n_primary": 2,
+   "selected_events": [
+    {
+     "id": 1,
+     "t0": 3583.2455963628386,
+     "f0": 181.00179653573986,
+     "v": 61.64113255375663,
+     "d": 1910.1553183130686,
+     "conf": 6.840260028839111,
+     "rms": 2.1538804056450527,
+     "primary": true,
+     "n_line": 13
+    }
+   ],
+   "runs": {
+    "blind": {
+     "status": "not_runnable",
+     "reason": "1 event: single-flight needs a time prior",
+     "error": null,
+     "search_mode": null,
+     "elapsed_s": null,
+     "sc": null,
+     "pipeline": null,
+     "top5": null,
+     "job_id": null,
+     "events": null,
+     "failure": "not_runnable_blind_single"
+    },
+    "prior": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "single",
+     "elapsed_s": 44.28290867805481,
+     "sc": {
+      "n_rows": 100,
+      "hit_radius_m": 3500.0,
+      "truth_rank": null,
+      "top1_dist_m": 1593337.637819839,
+      "top1_lat": 32.24757455982753,
+      "top1_lon": -86.25270106272134,
+      "min_dist_top10_m": 967927.8051732276,
+      "s1": -0.6660246211690455,
+      "s2": -0.7766461662167815,
+      "margin": 0.16609227576837415,
+      "truth_score": null,
+      "top1_flights": [
+       "09-08829"
+      ],
+      "top1_types": [
+       "H47"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": null,
+      "n_offset": null,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": 350593
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 32.24757455982753,
+       "lon": -86.25270106272134,
+       "score": -0.6660246211690455,
+       "dist_m": 1593337.637819839,
+       "flights": [
+        [
+         "09-08829",
+         "H47"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 33.75314408911247,
+       "lon": -117.26979412470274,
+       "score": -0.7766461662167815,
+       "dist_m": 2885477.7494279053,
+       "flights": [
+        [
+         "~299ed4",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 38.32375134746676,
+       "lon": -121.90623115737912,
+       "score": -0.9934157399163788,
+       "dist_m": 2949136.0814021486,
+       "flights": [
+        [
+         "~2b23ca",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 27.802730865971974,
+       "lon": -80.42321549729016,
+       "score": -1.0025432290871483,
+       "dist_m": 2172003.7964065643,
+       "flights": [
+        [
+         "N561PU",
+         "P28A"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 25.934243621990657,
+       "lon": -80.52167352580237,
+       "score": -1.055243942395696,
+       "dist_m": 2371492.729238952,
+       "flights": [
+        [
+         "a52f56",
+         ""
+        ]
+       ]
+      }
+     ],
+     "job_id": "bmarqpr59833",
+     "events": [
+      {
+       "id": 1,
+       "t0": 3583.2455963628386,
+       "f0": 181.00179653573986,
+       "v": 61.64113255375663,
+       "d": 1910.1553183130686,
+       "conf": 6.840260028839111
+      }
+     ],
+     "failure": "wrong_top_match"
+    }
+   }
+  },
+  {
+   "id": "marquette_night_20261031",
+   "place": "Lake Superior shoreline, Marquette MI (camera facing north)",
+   "tier": "coarse",
+   "radius_m": 3000,
+   "day": "2026-11-01",
+   "region": "CONUS",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "live_audio",
+   "audio_note": "auto: non-silent (pending visual screen)",
+   "screen": {
+    "duration_s": 3600.0,
+    "rms_dbfs_median": -41.00511169433594,
+    "rms_dbfs_p10": -42.9670295715332,
+    "rms_dbfs_p90": -36.536338806152344,
+    "peak_dbfs": -20.671550750732422,
+    "frac_silent_lt_m70": 0.0,
+    "frac_silent_lt_m60": 0.0,
+    "flatness_median": 0.04402029635146469,
+    "lowband_share_median": 0.8335375981540754
+   },
+   "n_events": 40,
+   "n_primary": 14,
+   "selected_events": [
+    {
+     "id": 1,
+     "t0": 945.0078321336157,
+     "f0": 90.82885844514414,
+     "v": 97.85075957470147,
+     "d": 455.4515078290345,
+     "conf": 13.82492446899414,
+     "rms": 1.5165656283659732,
+     "primary": true,
+     "n_line": 130
+    },
+    {
+     "id": 4,
+     "t0": 14.637016108543616,
+     "f0": 67.59066349692276,
+     "v": 33.553681680155144,
+     "d": 83.97324313372822,
+     "conf": 10.443711280822754,
+     "rms": 2.0391673887155357,
+     "primary": true,
+     "n_line": 64
+    }
+   ],
+   "runs": {
+    "blind": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 59.310041189193726,
+     "sc": {
+      "n_rows": 2,
+      "hit_radius_m": 3500.0,
+      "truth_rank": null,
+      "top1_dist_m": 1272508.310560786,
+      "top1_lat": 40.649928135106,
+      "top1_lon": -73.81685525579306,
+      "min_dist_top10_m": 1272508.310560786,
+      "s1": 1.9401913254485976,
+      "s2": 1.577389300093937,
+      "margin": 0.18699291177934532,
+      "truth_score": null,
+      "top1_flights": [
+       "N36HF",
+       "4d20f0"
+      ],
+      "top1_types": [
+       "S76",
+       ""
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": 133714,
+      "n_offset": 5,
+      "n_silence1": 5,
+      "n_silence2": 5,
+      "n_dense": 20,
+      "n": null
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 40.649928135106,
+       "lon": -73.81685525579306,
+       "score": 1.9401913254485976,
+       "dist_m": 1272508.310560786,
+       "flights": [
+        [
+         "N36HF",
+         "S76"
+        ],
+        [
+         "4d20f0",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 38.64310097017607,
+       "lon": -121.40230158991118,
+       "score": 1.577389300093937,
+       "dist_m": 2893557.7177951625,
+       "flights": [
+        [
+         "N942CP",
+         "B58T"
+        ],
+        [
+         "N370CS",
+         "BE20"
+        ]
+       ]
+      }
+     ],
+     "job_id": "bmarqbl61152",
+     "events": [
+      {
+       "id": 4,
+       "t0": 14.637016108543616,
+       "f0": 67.59066349692276,
+       "v": 33.553681680155144,
+       "d": 83.97324313372822,
+       "conf": 10.443711280822754
+      },
+      {
+       "id": 1,
+       "t0": 945.0078321336157,
+       "f0": 90.82885844514414,
+       "v": 97.85075957470147,
+       "d": 455.4515078290345,
+       "conf": 13.82492446899414
+      }
+     ],
+     "failure": "wrong_top_match"
+    },
+    "prior": {
+     "status": "no offset survivors",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 1.824556589126587,
+     "sc": {
+      "n_rows": 0,
+      "hit_radius_m": 3500.0
+     },
+     "pipeline": {
+      "n_candidates": 85,
+      "n_offset": 0,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": null
+     },
+     "top5": [],
+     "job_id": "bmarqpr59880",
+     "events": [
+      {
+       "id": 4,
+       "t0": 14.637016108543616,
+       "f0": 67.59066349692276,
+       "v": 33.553681680155144,
+       "d": 83.97324313372822,
+       "conf": 10.443711280822754
+      },
+      {
+       "id": 1,
+       "t0": 945.0078321336157,
+       "f0": 90.82885844514414,
+       "v": 97.85075957470147,
+       "d": 455.4515078290345,
+       "conf": 13.82492446899414
+      }
+     ],
+     "failure": "no_candidate_survived_filters"
+    },
+    "prior_single": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "single",
+     "elapsed_s": 8.940504789352417,
+     "sc": {
+      "n_rows": 100,
+      "hit_radius_m": 3500.0,
+      "truth_rank": null,
+      "top1_dist_m": 1064314.782293795,
+      "top1_lat": 45.596478620194034,
+      "top1_lon": -73.64868497720283,
+      "min_dist_top10_m": 811109.2562186231,
+      "s1": -0.9803616502082555,
+      "s2": -1.0533095226604035,
+      "margin": 0.07440914527475839,
+      "truth_score": null,
+      "top1_flights": [
+       "C-GYJZ"
+      ],
+      "top1_types": [
+       "DH8D"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": null,
+      "n_offset": null,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": 28797
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 45.596478620194034,
+       "lon": -73.64868497720283,
+       "score": -0.9803616502082555,
+       "dist_m": 1064314.782293795,
+       "flights": [
+        [
+         "C-GYJZ",
+         "DH8D"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 33.29680201221703,
+       "lon": -96.56137366530847,
+       "score": -1.0533095226604035,
+       "dist_m": 1665460.4215073364,
+       "flights": [
+        [
+         "a7e9c1",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 45.42939274164571,
+       "lon": -73.8092440546278,
+       "score": -1.4165734278861313,
+       "dist_m": 1055629.0042512347,
+       "flights": [
+        [
+         "c08172",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 35.0,
+       "lon": -92.61744400686088,
+       "score": -2.034399257722883,
+       "dist_m": 1356703.7207897655,
+       "flights": [
+        [
+         "N511DP",
+         "BE20"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 39.256198347107436,
+       "lon": -87.25979892238699,
+       "score": -2.227092949860743,
+       "dist_m": 811109.2562186231,
+       "flights": [
+        [
+         "N295CE",
+         "C441"
+        ]
+       ]
+      }
+     ],
+     "job_id": "bmarqpr59890",
+     "events": [
+      {
+       "id": 1,
+       "t0": 945.0078321336157,
+       "f0": 90.82885844514414,
+       "v": 97.85075957470147,
+       "d": 455.4515078290345,
+       "conf": 13.82492446899414
+      }
+     ],
+     "failure": "wrong_top_match"
+    }
+   }
+  },
+  {
+   "id": "elgin_sc_backyard_20261104",
+   "place": "Backyard feeder, Elgin SC",
+   "tier": "coarse",
+   "radius_m": 5000,
+   "day": "2026-11-04",
+   "region": "CONUS",
+   "prior_s": 136,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "live_audio",
+   "audio_note": "auto: non-silent (pending visual screen)",
+   "screen": {
+    "duration_s": 3600.0,
+    "rms_dbfs_median": -44.305328369140625,
+    "rms_dbfs_p10": -49.19147872924805,
+    "rms_dbfs_p90": -37.60074996948242,
+    "peak_dbfs": -11.154938697814941,
+    "frac_silent_lt_m70": 0.0,
+    "frac_silent_lt_m60": 0.0,
+    "flatness_median": 0.18176081845967035,
+    "lowband_share_median": 0.020017863718229743
+   },
+   "n_events": 40,
+   "n_primary": 13,
+   "selected_events": [
+    {
+     "id": 1,
+     "t0": 1604.297980887139,
+     "f0": 99.92688058388626,
+     "v": 107.20975892130173,
+     "d": 4377.360090239743,
+     "conf": 22.100770950317383,
+     "rms": 0.36450140944789955,
+     "primary": true,
+     "n_line": 155
+    },
+    {
+     "id": 10,
+     "t0": 1541.1450908567067,
+     "f0": 168.59173889557897,
+     "v": 319.9999999999985,
+     "d": 20652.9347057236,
+     "conf": 10.992646217346191,
+     "rms": 3.67404772296443,
+     "primary": true,
+     "n_line": 86
+    }
+   ],
+   "runs": {
+    "blind": {
+     "status": "timeout",
+     "reason": null,
+     "error": null,
+     "search_mode": null,
+     "elapsed_s": 1800,
+     "sc": null,
+     "pipeline": null,
+     "top5": null,
+     "job_id": null,
+     "events": null,
+     "failure": "too_slow_timeout"
+    },
+    "prior": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 34.14428782463074,
+     "sc": {
+      "n_rows": 20,
+      "hit_radius_m": 5500.0,
+      "truth_rank": null,
+      "top1_dist_m": 1116426.2216711256,
+      "top1_lat": 30.533147682357168,
+      "top1_lon": -91.88085637543841,
+      "min_dist_top10_m": 650166.1341737848,
+      "s1": 4.909402138630705,
+      "s2": 4.574482248411986,
+      "margin": 0.06822009702226854,
+      "truth_score": null,
+      "top1_flights": [
+       "N235FX",
+       "160986"
+      ],
+      "top1_types": [
+       "",
+       "BE9L"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": 392279,
+      "n_offset": 26486,
+      "n_silence1": 26164,
+      "n_silence2": 11823,
+      "n_dense": 47292,
+      "n": null
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 30.533147682357168,
+       "lon": -91.88085637543841,
+       "score": 4.909402138630705,
+       "dist_m": 1116426.2216711256,
+       "flights": [
+        [
+         "N235FX",
+         ""
+        ],
+        [
+         "160986",
+         "BE9L"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 34.99865253323751,
+       "lon": -116.81378552801318,
+       "score": 4.574482248411986,
+       "dist_m": 3280700.3941830457,
+       "flights": [
+        [
+         "N940JX",
+         ""
+        ],
+        [
+         "N910CB",
+         "BE30"
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 35.388519583183616,
+       "lon": -107.66698028645959,
+       "score": 4.063926912923644,
+       "dist_m": 2450497.4557182905,
+       "flights": [
+        [
+         "N531AW",
+         "BE30"
+        ],
+        [
+         "N305LG",
+         "BE20"
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 35.01751706791232,
+       "lon": -119.71582633194001,
+       "score": 4.026818347054652,
+       "dist_m": 3541113.746290432,
+       "flights": [
+        [
+         "N846AK",
+         ""
+        ],
+        [
+         "N17LV",
+         "BE36"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 42.69807761408552,
+       "lon": -76.11110544426356,
+       "score": 3.9239679530388667,
+       "dist_m": 1031742.7338005868,
+       "flights": [
+        [
+         "a3f8b5",
+         ""
+        ],
+        [
+         "N632CD",
+         "SR22"
+        ]
+       ]
+      }
+     ],
+     "job_id": "belgipr59978",
+     "events": [
+      {
+       "id": 10,
+       "t0": 1541.1450908567067,
+       "f0": 168.59173889557897,
+       "v": 319.9999999999985,
+       "d": 20652.9347057236,
+       "conf": 10.992646217346191
+      },
+      {
+       "id": 1,
+       "t0": 1604.297980887139,
+       "f0": 99.92688058388626,
+       "v": 107.20975892130173,
+       "d": 4377.360090239743,
+       "conf": 22.100770950317383
+      }
+     ],
+     "failure": "wrong_top_match"
+    },
+    "prior_single": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "single",
+     "elapsed_s": 519.3230848312378,
+     "sc": {
+      "n_rows": 100,
+      "hit_radius_m": 5500.0,
+      "truth_rank": null,
+      "top1_dist_m": 1301050.0582129532,
+      "top1_lat": 43.11893639956881,
+      "top1_lon": -71.1081386866217,
+      "min_dist_top10_m": 828132.0742437643,
+      "s1": -0.2802581616474216,
+      "s2": -0.2834340863811849,
+      "margin": 0.011332140035082141,
+      "truth_score": null,
+      "top1_flights": [
+       "C-FFDW"
+      ],
+      "top1_types": [
+       "P46T"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": null,
+      "n_offset": null,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": 286673
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 43.11893639956881,
+       "lon": -71.1081386866217,
+       "score": -0.2802581616474216,
+       "dist_m": 1301050.0582129532,
+       "flights": [
+        [
+         "C-FFDW",
+         "P46T"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 46.94394538268056,
+       "lon": -70.6766210343776,
+       "score": -0.2834340863811849,
+       "dist_m": 1654481.8332244328,
+       "flights": [
+        [
+         "CF-RCV",
+         "GLID"
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 38.99748472871003,
+       "lon": -94.70731583847491,
+       "score": -0.28605137414217874,
+       "dist_m": 1351341.7712309493,
+       "flights": [
+        [
+         "N575H",
+         "PC12"
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 31.171397772188286,
+       "lon": -100.04417418948552,
+       "score": -0.2864406951651482,
+       "dist_m": 1829543.1583721333,
+       "flights": [
+        [
+         "N440EH",
+         "C441"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 40.3701042040963,
+       "lon": -95.51705526723103,
+       "score": -0.2867621860460245,
+       "dist_m": 1471196.5633967104,
+       "flights": [
+        [
+         "N1NP",
+         "BE20"
+        ]
+       ]
+      }
+     ],
+     "job_id": "belgipr60498",
+     "events": [
+      {
+       "id": 1,
+       "t0": 1604.297980887139,
+       "f0": 99.92688058388626,
+       "v": 107.20975892130173,
+       "d": 4377.360090239743,
+       "conf": 22.100770950317383
+      }
+     ],
+     "failure": "wrong_top_match"
+    }
+   }
+  },
+  {
+   "id": "gainesville_backyard_20261104",
+   "place": "Backyard feeder, Gainesville FL",
+   "tier": "coarse",
+   "radius_m": 10000,
+   "day": "2026-11-04",
+   "region": "CONUS",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "live_audio",
+   "audio_note": "auto: non-silent (pending visual screen)",
+   "screen": {
+    "duration_s": 3600.0,
+    "rms_dbfs_median": -83.33218383789062,
+    "rms_dbfs_p10": -100.08541870117188,
+    "rms_dbfs_p90": -74.02630615234375,
+    "peak_dbfs": -6.408727645874023,
+    "frac_silent_lt_m70": 0.9330555555555555,
+    "frac_silent_lt_m60": 0.9841666666666666,
+    "flatness_median": 0.45254197694569837,
+    "lowband_share_median": 0.05335487156016605
+   },
+   "n_events": 40,
+   "n_primary": 18,
+   "selected_events": [
+    {
+     "id": 1,
+     "t0": 1164.2497739268383,
+     "f0": 850.6658410081782,
+     "v": 135.5929758785241,
+     "d": 1421.45603881563,
+     "conf": 15.825263977050781,
+     "rms": 14.24200634406529,
+     "primary": true,
+     "n_line": 78
+    },
+    {
+     "id": 2,
+     "t0": 3588.3059769218803,
+     "f0": 267.37364054800867,
+     "v": 148.24250648155436,
+     "d": 1602.4621379784319,
+     "conf": 11.674261093139648,
+     "rms": 8.380292913799687,
+     "primary": true,
+     "n_line": 53
+    }
+   ],
+   "runs": {
+    "blind": {
+     "status": "not_run",
+     "reason": "time budget (session deadline)",
+     "error": null,
+     "search_mode": null,
+     "elapsed_s": null,
+     "sc": null,
+     "pipeline": null,
+     "top5": null,
+     "job_id": null,
+     "events": null,
+     "failure": "not_run_time_budget"
+    },
+    "prior": {
+     "status": "no offset survivors",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 2.644275188446045,
+     "sc": {
+      "n_rows": 0,
+      "hit_radius_m": 10500.0
+     },
+     "pipeline": {
+      "n_candidates": 9397,
+      "n_offset": 0,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": null
+     },
+     "top5": [],
+     "job_id": "bgainpr60568",
+     "events": [
+      {
+       "id": 1,
+       "t0": 1164.2497739268383,
+       "f0": 850.6658410081782,
+       "v": 135.5929758785241,
+       "d": 1421.45603881563,
+       "conf": 15.825263977050781
+      },
+      {
+       "id": 2,
+       "t0": 3588.3059769218803,
+       "f0": 267.37364054800867,
+       "v": 148.24250648155436,
+       "d": 1602.4621379784319,
+       "conf": 11.674261093139648
+      }
+     ],
+     "failure": "no_candidate_survived_filters"
+    },
+    "prior_single": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "single",
+     "elapsed_s": 24.14954900741577,
+     "sc": {
+      "n_rows": 100,
+      "hit_radius_m": 10500.0,
+      "truth_rank": null,
+      "top1_dist_m": 1297609.3741524694,
+      "top1_lat": 40.2102048149479,
+      "top1_lon": -76.2401267778722,
+      "min_dist_top10_m": 401424.5274056473,
+      "s1": -9.869586031588133,
+      "s2": -10.37448325993432,
+      "margin": 0.05115688000795956,
+      "truth_score": null,
+      "top1_flights": [
+       "N88QD"
+      ],
+      "top1_types": [
+       "PC12"
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": null,
+      "n_offset": null,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": 107753
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 40.2102048149479,
+       "lon": -76.2401267778722,
+       "score": -9.869586031588133,
+       "dist_m": 1297609.3741524694,
+       "flights": [
+        [
+         "N88QD",
+         "PC12"
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 40.30901904419691,
+       "lon": -104.600243598518,
+       "score": -10.37448325993432,
+       "dist_m": 2340143.350231051,
+       "flights": [
+        [
+         "HB-FSO",
+         "PC12"
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 34.13402802730866,
+       "lon": -84.1825654161466,
+       "score": -10.655989481355013,
+       "dist_m": 528304.9665916908,
+       "flights": [
+        [
+         "N937BB",
+         "C441"
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 26.631333093783688,
+       "lon": -80.08242269484225,
+       "score": -10.747617689403906,
+       "dist_m": 401424.5274056473,
+       "flights": [
+        [
+         "N398JS",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 33.98311174991017,
+       "lon": -116.48111726294597,
+       "score": -12.564459534729805,
+       "dist_m": 3247893.201657668,
+       "flights": [
+        [
+         "a15743",
+         ""
+        ]
+       ]
+      }
+     ],
+     "job_id": "bgainpr60593",
+     "events": [
+      {
+       "id": 1,
+       "t0": 1164.2497739268383,
+       "f0": 850.6658410081782,
+       "v": 135.5929758785241,
+       "d": 1421.45603881563,
+       "conf": 15.825263977050781
+      }
+     ],
+     "failure": "wrong_top_match"
+    }
+   }
+  },
+  {
+   "id": "haun_ranch_20261106",
+   "place": "Haun Ranch near Meyersville TX (feeder camera)",
+   "tier": "coarse",
+   "radius_m": 8000,
+   "day": "2026-11-06",
+   "region": "CONUS",
+   "prior_s": 60,
+   "download": "ok",
+   "download_source": "yt-dlp",
+   "download_error": null,
+   "audio": "live_audio",
+   "audio_note": "auto: non-silent (pending visual screen)",
+   "screen": {
+    "duration_s": 3600.007,
+    "rms_dbfs_median": -37.191673278808594,
+    "rms_dbfs_p10": -54.11609649658203,
+    "rms_dbfs_p90": -28.246931076049805,
+    "peak_dbfs": 0.0,
+    "frac_silent_lt_m70": 0.0075,
+    "frac_silent_lt_m60": 0.016944444444444446,
+    "flatness_median": 0.0021150917804063185,
+    "lowband_share_median": 0.9754697199035327
+   },
+   "n_events": 28,
+   "n_primary": 16,
+   "selected_events": [
+    {
+     "id": 1,
+     "t0": 1276.8440508493593,
+     "f0": 208.03004382816195,
+     "v": 126.78406096419386,
+     "d": 50.00348776869704,
+     "conf": 11.326223373413086,
+     "rms": 3.8382283698323034,
+     "primary": true,
+     "n_line": 26
+    },
+    {
+     "id": 8,
+     "t0": 78.66072164419592,
+     "f0": 902.2932227065456,
+     "v": 10.000000000006567,
+     "d": 378.07354353288235,
+     "conf": 8.544381141662598,
+     "rms": 3.56957409670102,
+     "primary": true,
+     "n_line": 24
+    }
+   ],
+   "runs": {
+    "blind": {
+     "status": "not_run",
+     "reason": "time budget (session deadline)",
+     "error": null,
+     "search_mode": null,
+     "elapsed_s": null,
+     "sc": null,
+     "pipeline": null,
+     "top5": null,
+     "job_id": null,
+     "events": null,
+     "failure": "not_run_time_budget"
+    },
+    "prior": {
+     "status": "no offset survivors",
+     "reason": null,
+     "error": null,
+     "search_mode": "multi",
+     "elapsed_s": 6.666128158569336,
+     "sc": {
+      "n_rows": 0,
+      "hit_radius_m": 8500.0
+     },
+     "pipeline": {
+      "n_candidates": 22302,
+      "n_offset": 0,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": null
+     },
+     "top5": [],
+     "job_id": "bhaunpr60652",
+     "events": [
+      {
+       "id": 8,
+       "t0": 78.66072164419592,
+       "f0": 902.2932227065456,
+       "v": 10.000000000006567,
+       "d": 378.07354353288235,
+       "conf": 8.544381141662598
+      },
+      {
+       "id": 1,
+       "t0": 1276.8440508493593,
+       "f0": 208.03004382816195,
+       "v": 126.78406096419386,
+       "d": 50.00348776869704,
+       "conf": 11.326223373413086
+      }
+     ],
+     "failure": "no_candidate_survived_filters"
+    },
+    "prior_single": {
+     "status": "ok",
+     "reason": null,
+     "error": null,
+     "search_mode": "single",
+     "elapsed_s": 16.36406111717224,
+     "sc": {
+      "n_rows": 100,
+      "hit_radius_m": 8500.0,
+      "truth_rank": null,
+      "top1_dist_m": 163490.0977800415,
+      "top1_lat": 30.36291771469637,
+      "top1_lon": -97.68305462595751,
+      "min_dist_top10_m": 163490.0977800415,
+      "s1": -2.245102478225933,
+      "s2": -2.356347630685915,
+      "margin": 0.0495501446098298,
+      "truth_score": null,
+      "top1_flights": [
+       "N9010T"
+      ],
+      "top1_types": [
+       ""
+      ],
+      "truth_flights": null
+     },
+     "pipeline": {
+      "n_candidates": null,
+      "n_offset": null,
+      "n_silence1": null,
+      "n_silence2": null,
+      "n_dense": null,
+      "n": 120439
+     },
+     "top5": [
+      {
+       "rank": 1,
+       "lat": 30.36291771469637,
+       "lon": -97.68305462595751,
+       "score": -2.245102478225933,
+       "dist_m": 163490.0977800415,
+       "flights": [
+        [
+         "N9010T",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 2,
+       "lat": 41.730147323032696,
+       "lon": -88.02940424855782,
+       "score": -2.356347630685915,
+       "dist_m": 1651548.6462199413,
+       "flights": [
+        [
+         "N194QS",
+         ""
+        ]
+       ]
+      },
+      {
+       "rank": 3,
+       "lat": 36.48939992813511,
+       "lon": -97.51547009520432,
+       "score": -2.4712322669695928,
+       "dist_m": 840968.6572784646,
+       "flights": [
+        [
+         "04-3746",
+         "TEX2"
+        ]
+       ]
+      },
+      {
+       "rank": 4,
+       "lat": 36.53790873158462,
+       "lon": -97.52070869674819,
+       "score": -2.481543232499497,
+       "dist_m": 846372.20725974,
+       "flights": [
+        [
+         "05-3782",
+         "TEX2"
+        ]
+       ]
+      },
+      {
+       "rank": 5,
+       "lat": 41.07078692058929,
+       "lon": -73.89783229406139,
+       "score": -2.506964422295541,
+       "dist_m": 2511644.6927667824,
+       "flights": [
+        [
+         "a437cf",
+         ""
+        ]
+       ]
+      }
+     ],
+     "job_id": "bhaunpr60670",
+     "events": [
+      {
+       "id": 1,
+       "t0": 1276.8440508493593,
+       "f0": 208.03004382816195,
+       "v": 126.78406096419386,
+       "d": 50.00348776869704,
+       "conf": 11.326223373413086
+      }
+     ],
+     "failure": "wrong_top_match"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Doppler flyover geolocation</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:,">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+</head><body>
+<header>
+  <b>Doppler flyover geolocation</b>
+  <label>Recording <select id="projSel"></select></label>
+  <details id="uploadBox"><summary>Upload video/audio…</summary>
+    <form id="upForm">
+      <input type="file" name="file" accept="video/*,audio/*" required>
+      <input name="name" placeholder="name">
+      <button>Upload &amp; analyse</button> <span id="upMsg"></span>
+    </form>
+  </details>
+  <span id="projInfo" class="muted"></span>
+</header>
+<main>
+<section id="left">
+  <div class="panel">
+    <div class="row">
+      <label>Recording start <input id="startLocal" type="datetime-local" step="0.001"></label>
+      <label>TZ <select id="tzSel"></select></label>
+      <button id="saveStart">Save start time</button>
+      <span id="startUtc" class="muted"></span>
+      <label>Flight-data day <select id="daySel"></select></label>
+    </div>
+  </div>
+  <div class="panel">
+    <div class="row">
+      <button id="zoomAll">Full view</button>
+      <button id="zoomIn">Zoom +</button><button id="zoomOut">Zoom −</button>
+      <label>Display <select id="kindSel"><option value="z">whitened (z)</option><option value="db">dB</option></select></label>
+      <label>z max <input id="zmax" type="number" value="6" step="0.5" style="width:4em"></label>
+      <label><input type="checkbox" id="showLines" checked> traced lines</label>
+      <label><input type="checkbox" id="traceMode"> trace mode (click/drag to draw)</label>
+      <button id="clearTrace">Clear trace</button>
+      <span class="muted">wheel = zoom time · shift+wheel = zoom freq · drag = pan</span>
+    </div>
+    <div id="specWrap"><canvas id="specImg"></canvas><canvas id="specOv"></canvas><div id="hover" class="muted"></div></div>
+    <audio id="player" controls preload="metadata" style="width:100%"></audio>
+  </div>
+  <div class="panel">
+    <h3>Manual curve fit <span class="muted">(the four sliders)</span></h3>
+    <div class="sliders">
+      <label>f0 (Hz) <input id="s_f0" type="range" min="20" max="1500" step="0.05"><input id="n_f0" type="number" step="0.05"></label>
+      <label>v (m/s) <input id="s_v" type="range" min="5" max="320" step="0.1"><input id="n_v" type="number" step="0.1"></label>
+      <label>d (m) <input id="s_d" type="range" min="30" max="20000" step="5"><input id="n_d" type="number" step="5"></label>
+      <label>t0 (s) <input id="s_t0" type="range" min="0" max="100" step="0.05"><input id="n_t0" type="number" step="0.05"></label>
+    </div>
+    <div class="row">
+      <label><input type="radio" name="pmode" value="delayed" checked> Delayed (propagation delay on)</label>
+      <label><input type="radio" name="pmode" value="position"> Position (no delay; teaching)</label>
+      <label><input type="checkbox" id="showBoth"> show both</label>
+      <span id="readouts" class="mono"></span>
+    </div>
+    <div class="row">
+      <button id="fitTrace">Fit traced points (LSQ)</button>
+      <button id="addEvent">Add as event</button>
+      <button id="updEvent" disabled>Update selected event</button>
+      <button id="fromView">Centre t0 in view</button>
+    </div>
+    <p class="muted small" id="teach">Delayed mode: t0 is when the closest-approach sound <i>reaches</i> you (CPA time + slant distance / 343 m/s);
+      the curve is asymmetric because sound emitted while approaching arrives compressed in time. Position mode ignores the delay (symmetric
+      curve, t0 = geometric CPA) — that is the plain measurement-tool curve. All searches use the delayed times.</p>
+  </div>
+  <div class="panel">
+    <h3>Events <button id="detectBtn">Auto-detect faint curves</button> <span id="detMsg" class="muted"></span></h3>
+    <table id="evTable" class="tbl"></table>
+    <h4>Pairwise gaps from fitted t0s (selected events)</h4>
+    <table id="gapTable" class="tbl"></table>
+    <p class="muted small">gap = t0<sub>k</sub> − t0<sub>j</sub> of the fitted curves; tolerance = offset_tol_s + k·√(σ<sub>j</sub>²+σ<sub>k</sub>²), σ from each fit. Every pair is checked against the candidate flights' sound-delayed CPA times.</p>
+  </div>
+</section>
+<section id="right">
+  <div class="panel">
+    <h3>Location search</h3>
+    <div class="row">
+      <label>Mode <select id="modeSel"><option value="multi">multi-event (N ≥ 2, unknown time)</option><option value="single">single-flight (known time)</option></select></label>
+      <label><input type="checkbox" id="pJets"> include jets</label>
+      <label>silence ranking <select id="pRank"><option value="author">author (as written)</option><option value="corrected">corrected</option></select></label>
+    </div>
+    <div class="row">
+      <label>region <select id="regionSel"><option value="none">whole day store (CONUS)</option><option value="map">current map view</option></select></label>
+      <label><input type="checkbox" id="useStart"> restrict by start time ± <input id="clockU" type="number" value="300" style="width:4em"> s</label>
+    </div>
+    <details><summary>advanced parameters</summary><div id="advParams" class="grid2"></div></details>
+    <div class="row"><button id="runBtn" class="primary">Run search</button> <select id="resSel"></select> <span id="jobMsg"></span></div>
+    <div class="prog"><div id="progBar"></div></div>
+    <pre id="jobLog"></pre>
+  </div>
+  <div class="panel">
+    <div id="map"></div>
+    <div class="row">
+      <label>heat layer <select id="heatLayer"></select></label>
+      <button id="heatBtn">Heat map for selected match</button>
+      <label><input type="checkbox" id="showPts" checked> candidate points</label>
+      <span id="heatMsg" class="muted"></span>
+    </div>
+    <div class="row small"><span id="selLinks"></span>
+    </div>
+  </div>
+  <div class="panel">
+    <h3>Top matches <span class="muted small">(best point per flight combo)</span></h3>
+    <div id="summary" class="muted small"></div>
+    <div class="tblwrap"><table id="resTable" class="tbl"></table></div>
+    <canvas id="scatter" width="560" height="260"></canvas>
+  </div>
+  <div class="panel">
+    <h3>Side-by-side comparison <span class="muted small">(tick up to 3 matches)</span></h3>
+    <div id="compare"></div>
+  </div>
+</section>
+</main>
+<script src="app.js"></script>
+</body></html>

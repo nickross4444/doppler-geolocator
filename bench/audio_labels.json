@@ -1,0 +1,95 @@
+{
+ "ocmd_plim_20260727": {
+  "label": "no_live_audio",
+  "note": "digital silence (audio track all zeros)"
+ },
+ "ocmd_dolles_20260703": {
+  "label": "no_live_audio",
+  "note": "digital silence (audio track all zeros)"
+ },
+ "mickriley_20260930": {
+  "label": "live_audio",
+  "manual": true,
+  "note": "live golf-course audio (visual screen ok)"
+ },
+ "clearwater_pier60_20260905": {
+  "label": "no_live_audio",
+  "note": "digital silence (audio track all zeros)"
+ },
+ "destin_harborwalk_20261008": {
+  "label": "no_live_audio",
+  "note": "digital silence (audio track all zeros)"
+ },
+ "jaxbeach_pier_20260626": {
+  "label": "no_live_audio",
+  "note": "digital silence (audio track all zeros)"
+ },
+ "moosburg_20240421": {
+  "label": "no_live_audio",
+  "note": "digital silence (audio track all zeros)"
+ },
+ "mickriley_20260921": {
+  "label": "live_audio",
+  "manual": true,
+  "note": "live golf-course audio (visual screen ok)"
+ },
+ "chicago_lakepointtower_20260920": {
+  "label": "no_live_audio",
+  "sub": "music",
+  "manual": true,
+  "note": "music track (song-length blocks of tonal lines in the spectrogram; description: royalty-free ambient under the picture)"
+ },
+ "sunnyisles_intracoastal_20260920": {
+  "label": "no_live_audio",
+  "note": "digital silence (audio track all zeros)"
+ },
+ "lorain_lighthouse_20260615": {
+  "label": "live_audio",
+  "manual": true,
+  "note": "live but wind-dominated (96% of energy < 150 Hz)"
+ },
+ "ocmd_9thst_20260806": {
+  "label": "no_live_audio",
+  "note": "digital silence (audio track all zeros)"
+ },
+ "asheville_groveparkinn_20251031": {
+  "label": "live_audio",
+  "note": "auto: non-silent (pending visual screen)"
+ },
+ "notting_hill_gate_20261016": {
+  "label": "live_audio",
+  "note": "auto: non-silent (pending visual screen)"
+ },
+ "stives_harbour_20260802": {
+  "label": "no_live_audio",
+  "note": "digital silence (audio track all zeros)"
+ },
+ "berchtesgaden_markt_20260418": {
+  "label": "live_audio",
+  "note": "auto: non-silent (pending visual screen)"
+ },
+ "krakow_rynek_20261108": {
+  "label": "no_live_audio",
+  "note": "digital silence (audio track all zeros)"
+ },
+ "marquette_gales_20261105": {
+  "label": "live_audio",
+  "note": "auto: non-silent (pending visual screen)"
+ },
+ "marquette_night_20261031": {
+  "label": "live_audio",
+  "note": "auto: non-silent (pending visual screen)"
+ },
+ "elgin_sc_backyard_20261104": {
+  "label": "live_audio",
+  "note": "auto: non-silent (pending visual screen)"
+ },
+ "gainesville_backyard_20261104": {
+  "label": "live_audio",
+  "note": "auto: non-silent (pending visual screen)"
+ },
+ "haun_ranch_20261106": {
+  "label": "live_audio",
+  "note": "auto: non-silent (pending visual screen)"
+ }
+}
